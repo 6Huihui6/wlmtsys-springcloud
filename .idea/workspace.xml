@@ -4,15 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50f381b0-6eec-4f56-9f00-e868e1447b4e" name="更改" comment="" />
+    <list default="true" id="50f381b0-6eec-4f56-9f00-e868e1447b4e" name="更改" comment="log">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "6Huihui6"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/6Huihui6/wlmtsys-springcloud.git",
@@ -47,9 +62,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.InfoApplication.executor": "Run",
     "Spring Boot.WlmtsysApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "hui",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/project/wlmtsysplus/wlmtsys-basic/obs-faststart/src/main/resources",
+    "last_opened_file_path": "E:/project/wlmtsysplus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\wlmtsysplus" />
       <recent name="E:\project\wlmtsysplus\wlmtsys-basic\obs-faststart\src\main\resources" />
       <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model\common" />
       <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model" />
       <recent name="E:\project\wlmtsysplus\wlmtsys-basic\obs-faststart\src\main\java\com\hui\obs\service" />
-      <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model\info" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hui.model.common" />
@@ -150,11 +165,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731640555273</updated>
-      <workItem from="1731640556637" duration="26286000" />
+      <workItem from="1731640556637" duration="26756000" />
     </task>
+    <task id="LOCAL-00001" summary="log">
+      <option name="closed" value="true" />
+      <created>1731682023845</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731682023845</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="log" />
+    <option name="LAST_COMMIT_MESSAGE" value="log" />
   </component>
 </project>
