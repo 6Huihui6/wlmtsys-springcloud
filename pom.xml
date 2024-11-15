@@ -20,7 +20,6 @@
         <module>wlmtsys-info</module>
         <module>wlmtsys-utils</module>
         <module>wlmtsys-api</module>
-        <module>wlmtsys-basic/obs-faststart</module>
     </modules>
 
     <!-- 继承 Spring Boot 父工程 -->

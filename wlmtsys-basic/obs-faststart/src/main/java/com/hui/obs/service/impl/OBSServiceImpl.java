@@ -26,7 +26,7 @@ public class OBSServiceImpl implements OBSService {
     /**
      * 保存图片
      */
-    public String uploadImage(MultipartFile mpFile,String type)  {
+    public String uploadImage(MultipartFile mpFile, String type)  {
         try {
             String fileName = Uploader.getRandomName(mpFile);
             File tempFile = File.createTempFile("drawu",fileName);

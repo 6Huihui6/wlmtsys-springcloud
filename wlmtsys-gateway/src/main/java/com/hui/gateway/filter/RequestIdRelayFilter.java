@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
-import static com.zwnl.common.constants.Constant.*;
+import static com.hui.common.constants.Constant.*;
 
 
 @Slf4j
