@@ -12,7 +12,7 @@
     <artifactId>wlmtsys-basic</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>minio-faststart</module>
+        <module>obs-faststart</module>
     </modules>
 
     <properties>

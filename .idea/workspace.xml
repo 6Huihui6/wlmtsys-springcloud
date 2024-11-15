@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50f381b0-6eec-4f56-9f00-e868e1447b4e" name="更改" comment="log">
+    <list default="true" id="91b813ed-082f-44a3-a5b0-0e784600fda6" name="更改" comment="log">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/config/MinIOConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/config/MinIOConfigProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/service/FileStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/service/impl/MinIOFileStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-info/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,100 +24,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "6Huihui6"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/6Huihui6/wlmtsys-springcloud.git",
-    "accountId": "545197a8-ba2f-4b19-887f-4483989c9cec"
-  }
-}]]></component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="E:\.m2\repository" />
-        <option name="userSettingsFile" value="E:\maven\apache-maven-3.9.8-bin\apache-maven-3.9.8\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2orvYGwPC9SMlbNPFWCSbSztYWq" />
-  <component name="ProjectViewState">
-    <option name="autoscrollToSource" value="true" />
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="openDirectoriesWithSingleClick" value="true" />
-    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Maven.wlmtsys-info [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.InfoApplication.executor": "Run",
-    "Spring Boot.WlmtsysApplication.executor": "Run",
-    "git-widget-placeholder": "hui",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/project/wlmtsysplus",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "git-widget-placeholder": "main",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "Facet",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.36551723",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
+    "project.structure.side.proportion": "0.36551723"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project\wlmtsysplus" />
-      <recent name="E:\project\wlmtsysplus\wlmtsys-basic\obs-faststart\src\main\resources" />
-      <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model\common" />
-      <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model" />
-      <recent name="E:\project\wlmtsysplus\wlmtsys-basic\obs-faststart\src\main\java\com\hui\obs\service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hui.model.common" />
-      <recent name="com.hui.obs.service.domain" />
-      <recent name="com.hui.model.info.vo" />
-      <recent name="com.hui.info" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="KtorApplicationConfigurationType" />
-        <option value="MicronautRunConfigurationType" />
-        <option value="QuarkusRunConfigurationType" />
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.InfoApplication">
+  <component name="RunManager">
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="wlmtsys-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.gateway.GatewayApplication" />
@@ -114,78 +43,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="wlmtsys-info" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.info.InfoApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hui.info.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WlmtsysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="wlmtsys-info" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.info.WlmtsysApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hui.info.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.InfoApplication" />
-        <item itemvalue="Spring Boot.WlmtsysApplication" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="默认任务">
-      <changelist id="50f381b0-6eec-4f56-9f00-e868e1447b4e" name="更改" comment="" />
-      <created>1731640555273</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1731640555273</updated>
-      <workItem from="1731640556637" duration="27642000" />
-    </task>
-    <task id="LOCAL-00001" summary="log">
-      <option name="closed" value="true" />
-      <created>1731682023845</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1731682023845</updated>
-    </task>
-    <task id="LOCAL-00002" summary="log">
-      <option name="closed" value="true" />
-      <created>1731682627545</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1731682627545</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="log" />
