@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b813ed-082f-44a3-a5b0-0e784600fda6" name="更改" comment="log">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/config/MinIOConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/config/MinIOConfigProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/service/FileStorageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java/com/hui/minio/service/impl/MinIOFileStorageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/resources/META-INF/spring.factories" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +34,15 @@
     </configuration>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="log">
+      <option name="closed" value="true" />
+      <created>1731684810818</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731684810818</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
