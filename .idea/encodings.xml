@@ -6,24 +6,22 @@
     <file url="file://$PROJECT_DIR$/wlmtsys-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wlmtsys-auth/untitled/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-basic/minio-faststart/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-basic/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-basic/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wlmtsys-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-gateway/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wlmtsys-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-info/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wlmtsys-info/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-learning/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wlmtsys-learning/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-model/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wlmtsys-model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-ports/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wlmtsys-ports/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-user/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wlmtsys-user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wlmtsys-utils/src/main/java" charset="UTF-8" />
   </component>
 </project>

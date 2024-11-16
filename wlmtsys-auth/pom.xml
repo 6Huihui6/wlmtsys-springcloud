@@ -10,11 +10,26 @@
     </parent>
 
     <artifactId>wlmtsys-auth</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>wlmtsys-auth-common</module>
+        <module>wlmtsys-auth-gateway-sdk</module>
+        <module>wlmtsys-auth-resource-sdk</module>
+        <module>wlmtsys-auth-service</module>
+    </modules>
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.hui</groupId>
+            <artifactId>wlmtsys-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>

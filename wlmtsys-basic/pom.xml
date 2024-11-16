@@ -11,6 +11,9 @@
 
     <artifactId>wlmtsys-basic</artifactId>
     <packaging>pom</packaging>
+
+    <name>wlmtsys-basic</name>
+    <url>http://maven.apache.org</url>
     <modules>
         <module>obs-faststart</module>
     </modules>
@@ -20,7 +23,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-<dependencies>
 
-    </dependencies>
 </project>

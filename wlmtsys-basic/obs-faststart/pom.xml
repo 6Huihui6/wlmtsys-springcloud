@@ -10,7 +10,9 @@
     </parent>
 
     <artifactId>obs-faststart</artifactId>
-    <packaging>jar</packaging>
+
+    <name>obs-faststart</name>
+    <url>http://maven.apache.org</url>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

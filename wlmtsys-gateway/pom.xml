@@ -53,6 +53,12 @@
             <version>5.8.11</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.hui</groupId>
+            <artifactId>wlmtsys-auth-gateway-sdk</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>

@@ -1,10 +1,9 @@
 package com.hui.gateway.filter;
 
-
-import com.zwnl.authsdk.gateway.util.AuthUtil;
-import com.zwnl.common.domain.R;
-import com.zwnl.common.domain.dto.LoginUserDTO;
-import com.zwnl.gateway.config.AuthProperties;
+import com.hui.authsdk.gateway.util.AuthUtil;
+import com.hui.common.domain.R;
+import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.gateway.config.AuthProperties;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -14,11 +13,11 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+
 import java.util.List;
 
-import static com.zwnl.auth.common.constants.JwtConstants.AUTHORIZATION_HEADER;
-import static com.zwnl.auth.common.constants.JwtConstants.USER_HEADER;
-
+import static com.hui.auth.common.constants.JwtConstants.AUTHORIZATION_HEADER;
+import static com.hui.auth.common.constants.JwtConstants.USER_HEADER;
 
 @Component
 public class AccountAuthFilter implements GlobalFilter, Ordered {

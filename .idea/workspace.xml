@@ -5,14 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b813ed-082f-44a3-a5b0-0e784600fda6" name="更改" comment="初始化">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/obs_faststart_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/src/main/java/com/hui/auth/common/constants/AuthErrorInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/src/main/java/com/hui/auth/common/constants/JwtConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/src/main/java/com/hui/auth/common/domain/PrivilegeRoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/src/test/java/com/hui/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/main/java/com/hui/authsdk/gateway/config/AuthAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/main/java/com/hui/authsdk/gateway/util/AuthUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/main/java/com/hui/authsdk/gateway/util/JwtSignerHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/main/resources/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/test/java/com/hui/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/java/com/hui/authsdk/resource/config/FeignRelayUserAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/java/com/hui/authsdk/resource/config/ResourceAuthProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/java/com/hui/authsdk/resource/config/ResourceInterceptorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/java/com/hui/authsdk/resource/interceptors/FeignRelayUserInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/java/com/hui/authsdk/resource/interceptors/LoginAuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/java/com/hui/authsdk/resource/interceptors/UserInfoInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/resources/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/test/java/com/hui/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/java/com/hui/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/test/java/com/hui/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/domain/Uploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/domain/Uploader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/impl/OBSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/impl/OBSServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wlmtsys-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/filter/RequestIdRelayFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/filter/RequestIdRelayFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/config/AuthProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/config/AuthProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/filter/AccountAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/filter/AccountAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/handler/GatewayExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/handler/GatewayExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wlmtsys-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +54,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "6Huihui6"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/6Huihui6/wlmtsys-springcloud.git",
+    "accountId": "545197a8-ba2f-4b19-887f-4483989c9cec"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -31,8 +74,24 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2ovufsPQlTQYOPRwFttV9Ghwg4A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.obs-faststart [compile].executor": "Run",
     "Maven.wlmtsys-basic [clean].executor": "Run",
     "Maven.wlmtsys-basic [compile].executor": "Run",
@@ -44,14 +103,40 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GatewayApplication.executor": "Run",
     "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/project/wlmtsysplus/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Facet",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.36551723",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\wlmtsysplus\wlmtsys-auth\wlmtsys-auth-resource-sdk\src\main" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-auth\wlmtsys-auth-resource-sdk\src\main\java\com\hui\authsdk\resource" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-auth\wlmtsys-auth-gateway-sdk\src\main" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-auth\wlmtsys-auth-gateway-sdk\src\main\java\com\hui\authsdk\gateway" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-auth\wlmtsys-auth-common\src\main\java\com\hui\auth\common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\wlmtsysplus\wlmtsys-auth\src\main\java" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="wlmtsys-gateway" />
@@ -61,6 +146,15 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="log">
       <option name="closed" value="true" />
@@ -78,11 +172,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731685105648</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="初始化">
+      <option name="closed" value="true" />
+      <created>1731687809911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731687809911</updated>
+    </task>
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="91b813ed-082f-44a3-a5b0-0e784600fda6" name="更改" comment="初始化" />
+      <created>1731762481870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731762481870</updated>
+      <workItem from="1731762484718" duration="8566000" />
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="log" />
-    <option name="LAST_COMMIT_MESSAGE" value="log" />
+    <MESSAGE value="初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
   </component>
 </project>

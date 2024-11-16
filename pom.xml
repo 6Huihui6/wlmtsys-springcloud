@@ -20,6 +20,7 @@
         <module>wlmtsys-info</module>
         <module>wlmtsys-utils</module>
         <module>wlmtsys-api</module>
+
     </modules>
 
     <!-- 继承 Spring Boot 父工程 -->

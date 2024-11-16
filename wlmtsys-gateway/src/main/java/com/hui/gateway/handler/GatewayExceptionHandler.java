@@ -1,11 +1,12 @@
 package com.hui.gateway.handler;
 
 
-import com.zwnl.common.constants.Constant;
-import com.zwnl.common.domain.R;
-import com.zwnl.common.exceptions.CommonException;
-import com.zwnl.common.exceptions.UnauthorizedException;
-import com.zwnl.common.utils.JsonUtils;
+
+import com.hui.common.constants.Constant;
+import com.hui.common.domain.R;
+import com.hui.common.exceptions.CommonException;
+import com.hui.common.exceptions.UnauthorizedException;
+import com.hui.common.utils.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.reactive.error.ErrorWebExceptionHandler;
 import org.springframework.cloud.gateway.support.NotFoundException;
@@ -22,8 +23,8 @@ import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-import static com.zwnl.common.constants.ErrorInfo.Code.FAILED;
-import static com.zwnl.common.constants.ErrorInfo.Msg.SERVER_INTER_ERROR;
+import static com.hui.common.constants.ErrorInfo.Code.FAILED;
+import static com.hui.common.constants.ErrorInfo.Msg.SERVER_INTER_ERROR;
 
 
 @Slf4j
