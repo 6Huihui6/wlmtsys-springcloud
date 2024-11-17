@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 
 @Data
-@ConfigurationProperties(prefix = "zwnl.swagger")
+@ConfigurationProperties(prefix = "wlmtsys.swagger")
 public class SwaggerConfigProperties implements Serializable {
 
     private Boolean enable = false;

@@ -20,7 +20,7 @@ import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 @Configuration
-@ConditionalOnProperty(prefix = "hui.swagger", name = "enable",havingValue = "true")
+@ConditionalOnProperty(prefix = "wlmtsys.swagger", name = "enable",havingValue = "true")
 @EnableConfigurationProperties(SwaggerConfigProperties.class)
 public class Knife4jConfiguration {
 
@@ -53,13 +53,13 @@ public class Knife4jConfiguration {
     }
     @Bean
     @Primary
-    @ConditionalOnProperty(prefix = "hui.swagger", name = "enableResponseWrap",havingValue = "true")
+    @ConditionalOnProperty(prefix = "wlmtsys.swagger", name = "enableResponseWrap",havingValue = "true")
     public BaseSwaggerResponseModelPlugin baseSwaggerResponseModelPlugin(){
         return new BaseSwaggerResponseModelPlugin();
     }
     @Bean
     @Primary
-    @ConditionalOnProperty(prefix = "hui.swagger", name = "enableResponseWrap",havingValue = "true")
+    @ConditionalOnProperty(prefix = "wlmtsys.swagger", name = "enableResponseWrap",havingValue = "true")
     public BaseSwaggerResponseBuilderPlugin baseSwaggerResponseBuilderPlugin(){
         return new BaseSwaggerResponseBuilderPlugin();
     }
