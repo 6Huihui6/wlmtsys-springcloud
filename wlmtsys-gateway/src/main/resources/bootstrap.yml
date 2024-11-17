@@ -17,7 +17,7 @@ spring:
             refresh: false
           - data-id: shared-redis.yaml # 共享redis配置
             refresh: false
-          - data-id: shared-mybatis.yaml # 共享mybatis配置
+          - data-id: shared-mybatis-wlmtsys.yaml # 共享mybatis配置
             refresh: false
           - data-id: shared-logs.yaml # 共享日志配置
             refresh: false

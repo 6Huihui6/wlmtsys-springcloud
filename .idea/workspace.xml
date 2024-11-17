@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91b813ed-082f-44a3-a5b0-0e784600fda6" name="更改" comment="网关修改配置文件" />
+    <list default="true" id="91b813ed-082f-44a3-a5b0-0e784600fda6" name="更改" comment="网关修改配置文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/resources/bootstrap.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,37 +59,41 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.obs-faststart [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.wlmtsys-basic [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.wlmtsys-basic [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.wlmtsys-basic [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.wlmtsysplus [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.wlmtsysplus [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.wlmtsysplus [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hui&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/project/wlmtsysplus/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.36551723&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.obs-faststart [compile].executor": "Run",
+    "Maven.wlmtsys-basic [clean].executor": "Run",
+    "Maven.wlmtsys-basic [compile].executor": "Run",
+    "Maven.wlmtsys-basic [install].executor": "Run",
+    "Maven.wlmtsysplus [clean].executor": "Run",
+    "Maven.wlmtsysplus [compile].executor": "Run",
+    "Maven.wlmtsysplus [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.InfoApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/project/wlmtsysplus/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.36551723",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\project\wlmtsysplus\wlmtsys-auth\wlmtsys-auth-resource-sdk\src\main" />
@@ -103,6 +113,7 @@
   </component>
   <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
       <module name="wlmtsys-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.gateway.GatewayApplication" />
       <method v="2">
@@ -110,12 +121,17 @@
       </method>
     </configuration>
     <configuration name="InfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
       <module name="wlmtsys-info" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.info.InfoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.InfoApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
