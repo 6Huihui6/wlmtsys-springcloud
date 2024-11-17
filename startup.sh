@@ -1,11 +1,11 @@
 #! /bin/sh
-cd /usr/local/src/script || exit 1
+cd /usr/local/src/wlmtsys || exit 1
 BASE_PATH='/var/lib/jenkins/workspace/wlmtsys-dev-build'
 PROJECT_NAME=""
 PROJECT_PATH=''
 CONTAINER_NAME=""
 JAVA_OPTS="-Xms300m -Xmx300m"
-PORT=2020
+PORT=20020
 DEBUG_PORT=0
 while getopts "c:n:d:p:o:a:" opt; do
     case $opt in
