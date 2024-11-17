@@ -16,7 +16,7 @@ spring:
             refresh: false
           - data-id: shared-redis.yaml # 共享redis配置
             refresh: false
-          - data-id: shared-mybatis.yaml # 共享mybatis配置
+          - data-id: shared-mybatis-wlmtsys.yaml # 共享mybatis配置
             refresh: false
           - data-id: shared-logs.yaml # 共享日志配置
             refresh: false
@@ -30,7 +30,7 @@ wlmtsys:
   swagger:
     enable: true
     enableResponseWrap: true
-    package-path: com.zwnl.user.controller
+    package-path: com.hui.user.controller
     title: 职位你来 - 用户中心接口文档
     description: 该服务用户管理、用户信息管理
     contact-name: 职位你来·研究院
@@ -54,5 +54,5 @@ wlmtsys:
 logging:
   level:
     com.hui: debug
-    org.springframework: debug
+#    org.springframework: debug
 

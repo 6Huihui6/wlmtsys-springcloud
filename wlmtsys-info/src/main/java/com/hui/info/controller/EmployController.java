@@ -31,8 +31,8 @@ import java.util.List;
 @RequestMapping("/employ")
 public class EmployController {
 
-    @Autowired
-    private IEmployService employService;
+
+    private final IEmployService employService;
 
     @ApiOperation("admin---新增招聘信息接口")
     @PostMapping("/add")

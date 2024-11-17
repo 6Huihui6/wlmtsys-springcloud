@@ -30,10 +30,10 @@ wlmtsys:
   swagger:
     enable: true
     enableResponseWrap: true
-    package-path: com.hui.user.controller
-    title: 职位你来 - 用户中心接口文档
-    description: 该服务用户管理、用户信息管理
-    contact-name: 职位你来·研究院
+    package-path: com.hui.info.controller
+    title: 未来媒体实验室 -中心接口文档
+    description: 该服务信息管理
+    contact-name: wlmtsys·研究院
     contact-url: https://wuminghui.top
     contact-email: 3103733088@qq.com
     version: v1.0
@@ -43,5 +43,5 @@ wlmtsys:
 logging:
   level:
     com.hui: debug
-    org.springframework: debug
+#    org.springframework: debug
 

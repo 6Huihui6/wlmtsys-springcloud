@@ -2,7 +2,11 @@ package com.hui.user.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.po.User;
+
+import javax.validation.Valid;
 
 /**
  * <p>
@@ -14,4 +18,11 @@ import com.hui.model.user.po.User;
  */
 public interface IUserService extends IService<User> {
 
+    /**
+     * 登录
+     * @param loginDTO
+     * @param isStaff
+     * @return
+     */
+    LoginUserDTO queryUserDetail(@Valid LoginFormDTO loginDTO, boolean isStaff);
 }

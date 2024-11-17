@@ -1,14 +1,14 @@
 {
   "groups": [
     {
-      "name": "hui.auth.gateway",
+      "name": "wlmtsys.auth.gateway",
       "type": "com.hui.authsdk.gateway.config.AuthAutoConfiguration",
       "sourceType": "com.hui.authsdk.gateway.config.AuthProperties"
     }
   ],
   "properties": [
     {
-      "name": "hui.auth.excludePath",
+      "name": "wlmtsys.auth.excludePath",
       "type": "java.util.Set",
       "description": "不用登录就能访问的路径，ant风格通配符",
       "sourceType": "com.hui.authsdk.gateway.config.AuthProperties",

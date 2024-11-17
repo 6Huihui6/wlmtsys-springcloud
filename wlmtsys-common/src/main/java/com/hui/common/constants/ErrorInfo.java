@@ -22,6 +22,7 @@ public interface ErrorInfo {
 
         String USER_NOT_EXISTS = "用户信息不存在";
         String INVALID_USER_TYPE = "无效的用户类型";
+        String INVALID_USER_STATUS = "无效的用户状态";
     }
 
     interface Code {

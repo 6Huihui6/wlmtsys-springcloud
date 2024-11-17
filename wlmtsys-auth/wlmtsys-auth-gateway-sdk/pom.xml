@@ -5,11 +5,9 @@
         <groupId>com.hui</groupId>
         <artifactId>wlmtsysplus</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>wlmtsys-auth-gateway-sdk</artifactId>
-    <packaging>jar</packaging>
 
     <name>wlmtsys-auth-gateway-sdk</name>
     <url>http://maven.apache.org</url>
