@@ -26,7 +26,7 @@ spring:
             refresh: false
           - data-id: shared-xxljob.yaml # 共享mq配置
             refresh: false
-zwnl:
+wlmtsys:
   swagger:
     enable: true
     enableResponseWrap: true
@@ -34,7 +34,7 @@ zwnl:
     title: 职位你来 - 用户中心接口文档
     description: 该服务用户管理、用户信息管理
     contact-name: 职位你来·研究院
-    contact-url: https://wlmtsys.com
+    contact-url: https://wuminghui.top
     contact-email: 3103733088@qq.com
     version: v1.0
   jdbc:
