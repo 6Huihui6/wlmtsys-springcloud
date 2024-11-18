@@ -4,14 +4,11 @@ package com.hui.api.client.user;
 
 import com.hui.api.client.user.fallback.UserClientFallback;
 import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.dto.UserDTO;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -35,7 +32,8 @@ public interface UserClient {
     @PostMapping("/user/detail/{isStaff}")
     LoginUserDTO queryUserDetail(@RequestBody LoginFormDTO loginDTO, @PathVariable("isStaff") boolean isStaff);
 
-
+    @PostMapping("/user/register")
+    ResponseResult register(@RequestBody LoginFormDTO loginFormDTO);
     /**
      * 查询用户类型
      * @param id 用户id
@@ -60,4 +58,6 @@ public interface UserClient {
      */
     @GetMapping("/user/{id}")
     UserDTO queryUserById(@PathVariable("id") Long id);
+
+
 }

@@ -3,6 +3,7 @@ package com.hui.user.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.po.User;
 
@@ -25,4 +26,11 @@ public interface IUserService extends IService<User> {
      * @return
      */
     LoginUserDTO queryUserDetail(@Valid LoginFormDTO loginDTO, boolean isStaff);
+
+    /**
+     * 注册
+     * @param loginFormDTO
+     * @return
+     */
+    ResponseResult register(LoginFormDTO loginFormDTO);
 }

@@ -43,6 +43,7 @@ public class LoginRecord implements Serializable {
      */
     private String cellPhone;
 
+    private String email;
     /**
      * 登录时间
      */

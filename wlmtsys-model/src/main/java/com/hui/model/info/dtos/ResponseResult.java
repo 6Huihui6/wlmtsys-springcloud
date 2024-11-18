@@ -18,7 +18,7 @@ public class ResponseResult<T> implements Serializable {
 
     private Integer code;
 
-    private String errorMessage;
+    private String message;
 
     private T data;
 
@@ -33,13 +33,13 @@ public class ResponseResult<T> implements Serializable {
 
     public ResponseResult(Integer code, String msg, T data) {
         this.code = code;
-        this.errorMessage = msg;
+        this.message = msg;
         this.data = data;
     }
 
     public ResponseResult(Integer code, String msg) {
         this.code = code;
-        this.errorMessage = msg;
+        this.message = msg;
     }
 
     public static ResponseResult errorResult(int code, String msg) {
@@ -78,7 +78,7 @@ public class ResponseResult<T> implements Serializable {
 
     public ResponseResult<?> error(Integer code, String msg) {
         this.code = code;
-        this.errorMessage = msg;
+        this.message = msg;
         return this;
     }
 
@@ -91,7 +91,7 @@ public class ResponseResult<T> implements Serializable {
     public ResponseResult<?> ok(Integer code, T data, String msg) {
         this.code = code;
         this.data = data;
-        this.errorMessage = msg;
+        this.message = msg;
         return this;
     }
 
@@ -109,11 +109,11 @@ public class ResponseResult<T> implements Serializable {
     }
 
     public String getErrorMessage() {
-        return errorMessage;
+        return message;
     }
 
     public void setErrorMessage(String errorMessage) {
-        this.errorMessage = errorMessage;
+        this.message = errorMessage;
     }
 
     public T getData() {

@@ -50,13 +50,13 @@ public class LoginRecordServiceImpl extends ServiceImpl<LoginRecordMapper, Login
     }
 
     @Override
-    public void loginSuccess(String cellphone, Long userId) {
+    public void loginSuccess(String email, Long userId) {
         LoginRecord record = new LoginRecord();
         LocalDateTime now = LocalDateTime.now();
         record.setLoginTime(now);
         record.setLoginDate(now.toLocalDate());
         record.setUserId(userId);
-        record.setCellPhone(cellphone);
+        record.setEmail(email);
         record.setIpv4(WebUtils.getRemoteAddr());
         saveAsync(record);
     }

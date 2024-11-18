@@ -16,5 +16,5 @@ public interface ILoginRecordService extends IService<LoginRecord> {
 
     void saveAsync(LoginRecord record);
 
-    void loginSuccess(String cellphone, Long userId);
+    void loginSuccess(String email, Long userId);
 }

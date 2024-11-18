@@ -49,11 +49,8 @@ spring:
             - Path=/sms/**
         - id: us
           uri: lb://user-service
-#          uri: http://localhost:9091
           predicates:
             - Path=/us/**
-#          filters:
-#            - PreserveHostHeader
         - id: cs
           uri: lb://course-service
           predicates:

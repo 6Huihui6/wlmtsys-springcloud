@@ -2,13 +2,14 @@ package com.hui.user.controller;
 
 
 import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.user.service.IUserService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.stereotype.Controller;
 import springfox.documentation.annotations.ApiIgnore;
 
 import javax.validation.Valid;
@@ -43,4 +44,10 @@ public class UserController {
         return usersService.queryUserDetail(loginDTO, isStaff);
     }
 
+//    @ApiIgnore
+    @ApiOperation(value = "用户注册")
+    @PostMapping("/register")
+    public ResponseResult register(@Valid @RequestBody LoginFormDTO loginFormDTO){
+        return usersService.register(loginFormDTO);
+    };
 }

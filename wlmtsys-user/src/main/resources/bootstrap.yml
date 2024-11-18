@@ -42,8 +42,9 @@ wlmtsys:
       enable: true
       excludeLoginPaths:
         - /students/register
-        - /users/detail/{isStaff}
-        - /users/list
+        - /user/detail/{isStaff}
+        - /user/list
+        - /user/register
         - GET:/users/{id}
         - /users/{id}/type
         - /users/ids
@@ -54,5 +55,5 @@ wlmtsys:
 logging:
   level:
     com.hui: debug
-#    org.springframework: debug
+    org.springframework: debug
 

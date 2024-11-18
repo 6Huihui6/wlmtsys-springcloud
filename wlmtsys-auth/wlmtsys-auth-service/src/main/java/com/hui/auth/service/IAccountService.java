@@ -1,4 +1,5 @@
 package com.hui.auth.service;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 
 /**
@@ -16,4 +17,17 @@ public interface IAccountService {
     void logout();
 
     String refreshToken(String refreshToken);
+
+    /**
+     * 注册
+     *
+     * @param loginFormDTO
+     */
+    ResponseResult registerByEmail(LoginFormDTO loginFormDTO);
+
+    /**
+     * 发送验证码
+     * @param email
+     */
+    void generateCaptcha(String email);
 }

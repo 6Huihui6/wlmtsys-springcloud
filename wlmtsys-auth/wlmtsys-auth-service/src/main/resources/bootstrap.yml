@@ -20,12 +20,34 @@ spring:
             refresh: false
           - data-id: shared-logs.yaml # 共享日志配置
             refresh: false
+
+  mail:
+    host: smtp.163.com
+    # smtp服务主机  qq邮箱则为smtp.qq.com
+    # 服务协议 smtp为发送邮件
+    protocol: smtp
+    # 编码集
+    default-encoding: UTF-8
+    # 发送邮件的账户
+    username: wlmtsys@163.com
+    # 授权码 邮箱服务器提供的授权码，不是你邮箱的密码
+    password: XPgkCqdpMLbdrqKD
+    # 开启一些权限
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
 encrypt:
   key-store:
     alias: tjxt  #别名
     location: classpath:tjxt.jks  #KeyStore 证书库名称
     password: tj123321   #证书库密码
     secret: tj123321   #秘钥
+
 wlmtsys:
   swagger:
     enable: true

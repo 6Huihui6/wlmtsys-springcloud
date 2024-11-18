@@ -3,25 +3,25 @@ package com.hui.user.service.impl;
 
 import cn.hutool.core.util.StrUtil;
 import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.common.enums.AppHttpCodeEnum;
 import com.hui.common.exceptions.BadRequestException;
 import com.hui.common.exceptions.ForbiddenException;
 import com.hui.common.utils.AssertUtils;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.enums.UserStatus;
 import com.hui.model.user.po.User;
 import com.hui.model.user.po.UserDetail;
-import com.hui.user.constant.UserConstants;
 import com.hui.user.mapper.UserMapper;
 import com.hui.user.service.IUserDetailService;
 import com.hui.user.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import static com.hui.model.user.enums.UserRole.INTERNAL;
-import static com.hui.model.user.enums.UserType.INTERNAL_USER;
 import static com.hui.user.constant.UserConstants.*;
 import static com.hui.user.constant.UserErrorInfo.Msg.*;
 
@@ -38,6 +38,7 @@ import static com.hui.user.constant.UserErrorInfo.Msg.*;
 @RequiredArgsConstructor
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
+    private final StringRedisTemplate stringRedisTemplate;
     private final PasswordEncoder passwordEncoder;
     private final IUserDetailService detailService;
 
@@ -60,16 +61,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         }
         // 3.验证码登录
         if (type == 2) {
-            user = loginByVerifyCode(loginDTO.getCellPhone(), loginDTO.getPassword());
+            user = loginByVerifyCode(loginDTO.getEmail(), loginDTO.getCode());
         }
         // 4.错误的登录方式
         if (user == null) {
             throw new BadRequestException(ILLEGAL_LOGIN_TYPE);
         }
         // 5.判断用户类型与登录方式是否匹配
-        if (isStaff ^ user.getType() != INTERNAL_USER) {
-            throw new BadRequestException(isStaff ? "非管理端用户" : "非学生端用户");
-        }
+//        if (isStaff ^ user.getType() != INTERNAL_USER) {
+//            throw new BadRequestException(isStaff ? "非管理端用户" : "非学生端用户");
+//        }
         // 6.封装返回
         LoginUserDTO userDTO = new LoginUserDTO();
         userDTO.setUserId(user.getId());
@@ -77,11 +78,50 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         return userDTO;
     }
 
-    public User loginByVerifyCode(String phone, String code) {
+    /**
+     * 注册
+     *
+     * @param loginFormDTO
+     * @return
+     */
+    @Override
+    public ResponseResult register(LoginFormDTO loginFormDTO) {
+        // 1.数据校验
+        String email = loginFormDTO.getEmail();
+        String password = loginFormDTO.getPassword();
+        if (StrUtil.isBlank(email) && StrUtil.isBlank(password)) {
+            throw new BadRequestException(INVALID_UN);
+        }
+        // 2.判断用户是否存在
+        User user = lambdaQuery()
+               .eq(StrUtil.isNotBlank(email), User::getEmail, email)
+               .one();
+        if (user != null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.DATA_EXIST);
+        }
+
+        // 3.保存用户信息
+        User newUser = new User();
+        newUser.setEmail(email);
+        newUser.setPassword(passwordEncoder.encode(password));
+        save(newUser);
+        // 4.保存用户详情
+        UserDetail detail = new UserDetail();
+        detail.setUserId(Math.toIntExact(newUser.getId()));
+        detailService.save(detail);
+        // 5.封装返回
+        return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
+//        return "success";
+    }
+
+    public User loginByVerifyCode(String email, String code) {
         // 1.校验验证码
-//        codeService.verifyCode(phone, code);
+        boolean isRight = verifyCaptcha(email, code);
+        if (!isRight) {
+            throw new BadRequestException(INVALID_CODE);
+        }
         // 2.根据手机号查询
-        User user = lambdaQuery().eq(User::getCellPhone, phone).one();
+        User user = lambdaQuery().eq(User::getEmail, email).one();
         if (user == null) {
             throw new BadRequestException(PHONE_NOT_EXISTS);
         }
@@ -91,7 +131,17 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         }
         return user;
     }
-
+    // 校验验证码
+    public boolean verifyCaptcha(String email, String inputCaptcha) {
+        // 从Redis中获取验证码
+        String storedCaptcha = stringRedisTemplate.opsForValue().get("captcha:" + email);
+        if (storedCaptcha == null || !storedCaptcha.equals(inputCaptcha)) {
+            return false;
+        }
+        // 验证成功后删除验证码
+        stringRedisTemplate.delete("captcha:" + email);
+        return true;
+    }
     public User loginByPw(LoginFormDTO loginDTO) {
         // 1.数据校验
         String email = loginDTO.getEmail();
@@ -109,7 +159,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         if (user.getStatus() == UserStatus.BANNED) {
             throw new ForbiddenException(USER_FROZEN);
         }
-        String encode = passwordEncoder.encode("123456");
+        String encode = passwordEncoder.encode(loginDTO.getPassword());
         log.info(encode);
         // 4.校验密码
         if (!passwordEncoder.matches(loginDTO.getPassword(), user.getPassword())) {

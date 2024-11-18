@@ -4,8 +4,10 @@ package com.hui.api.client.user.fallback;
 
 import com.hui.api.client.user.UserClient;
 import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.dto.UserDTO;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.openfeign.FallbackFactory;
 
@@ -40,6 +42,11 @@ public class UserClientFallback implements FallbackFactory<UserClient> {
 
             @Override
             public UserDTO queryUserById(Long id) {
+                return null;
+            }
+
+            @Override
+            public ResponseResult register(@RequestBody LoginFormDTO loginFormDTO) {
                 return null;
             }
         };

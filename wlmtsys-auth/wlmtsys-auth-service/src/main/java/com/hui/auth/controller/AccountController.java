@@ -5,6 +5,7 @@ import com.hui.auth.common.constants.JwtConstants;
 import com.hui.auth.service.IAccountService;
 import com.hui.common.exceptions.BadRequestException;
 import com.hui.common.utils.WebUtils;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -21,6 +22,20 @@ import org.springframework.web.bind.annotation.*;
 public class AccountController {
 
     private final IAccountService accountService;
+
+
+    @ApiOperation("获取验证码")
+    @PostMapping(value = "/captcha")
+    public void getCaptcha(@RequestParam(value = "email", required = true) String email) {
+        accountService.generateCaptcha(email); // 生成验证码并发送到邮箱
+    }
+
+    @ApiOperation("注册")
+    @PostMapping(value = "/register")
+    public ResponseResult registerByEmail(@RequestBody LoginFormDTO loginFormDTO) {
+         return accountService.registerByEmail(loginFormDTO);
+    }
+
 
     @ApiOperation("登录并获取token")
     @PostMapping(value = "/login")

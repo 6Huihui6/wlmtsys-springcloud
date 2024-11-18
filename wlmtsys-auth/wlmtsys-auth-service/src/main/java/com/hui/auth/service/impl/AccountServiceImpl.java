@@ -3,13 +3,16 @@ package com.hui.auth.service.impl;
 
 import com.hui.auth.common.constants.JwtConstants;
 import com.hui.auth.service.IAccountService;
+import com.hui.auth.service.ICaptchaService;
 import com.hui.auth.service.ILoginRecordService;
 import com.hui.auth.util.JwtTool;
 import com.hui.common.domain.dto.LoginUserDTO;
+import com.hui.common.enums.AppHttpCodeEnum;
 import com.hui.common.exceptions.BadRequestException;
 import com.hui.common.utils.BooleanUtils;
 import com.hui.common.utils.WebUtils;
 import com.hui.api.client.user.UserClient;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -30,6 +33,8 @@ public class AccountServiceImpl implements IAccountService {
     private final JwtTool jwtTool;
     private final UserClient userClient;
     private final ILoginRecordService loginRecordService;
+    private final ICaptchaService captchaService;
+
 
 
 
@@ -74,6 +79,39 @@ public class AccountServiceImpl implements IAccountService {
         // 2.生成新的access-token、refresh-token
         return generateToken(userDTO);
     }
+
+    /**
+     * 发送验证码
+     *
+     * @param email
+     */
+    @Override
+    public void generateCaptcha(String email) {
+        captchaService.generateCaptcha(email);
+    }
+    /**
+     * 注册
+     *
+     * @param loginFormDTO
+     */
+    @Override
+    public ResponseResult registerByEmail(LoginFormDTO loginFormDTO) {
+        // 1.校验验证码
+        if (loginFormDTO == null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_REQUIRE);
+        }
+        String captcha = loginFormDTO.getCode();
+        boolean isRegiter = captchaService.verifyCaptcha(loginFormDTO.getEmail(), captcha);
+        if (!isRegiter) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.CODE_ERROR);
+        }
+        // 2.调用用户服务注册接口
+        userClient.register(loginFormDTO);
+        return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
+    }
+
+
+
 
     @Override
     public String login(LoginFormDTO loginDTO, boolean isStaff) {

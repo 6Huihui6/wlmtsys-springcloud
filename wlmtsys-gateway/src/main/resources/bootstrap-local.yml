@@ -6,7 +6,7 @@ spring:
         namespace: 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625
         group: DEFAULT_GROUP
         ip: localhost
-        port: 10000
+        port: 20000
 #        secure: false
 #        register-enabled: true
 
