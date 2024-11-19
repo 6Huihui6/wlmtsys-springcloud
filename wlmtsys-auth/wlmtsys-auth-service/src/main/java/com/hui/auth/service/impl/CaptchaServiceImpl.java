@@ -28,8 +28,8 @@ public class CaptchaServiceImpl implements ICaptchaService {
         message.setFrom(sendemail);
         message.setTo(email);
         //邮件标题
-        message.setSubject("欢迎访问未来媒体实验室");
-        message.setText("您的登录验证码是"+captcha);
+        message.setSubject("【未来媒体实验室】欢迎访问未来媒体实验室");
+        message.setText("您的业务验证码是："+captcha+", 验证码5分钟内有效。如非本人操作，请忽略此邮件。");
         javaMailSender.send(message);
         // 将验证码存储到Redis中，设置有效期为5分钟
         stringRedisTemplate.opsForValue().set("captcha:" + email, captcha, 5, TimeUnit.MINUTES);
