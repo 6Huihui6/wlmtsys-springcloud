@@ -73,6 +73,9 @@ public class PageQuery {
     public <T> Page<T> toMpPageDefaultSortByCreateTimeDesc() {
         return toMpPage(Constant.DATA_FIELD_NAME_CREATE_TIME, false);
     }
+    public <T> Page<T> toMpPageDefaultSortByUpdateTimeDesc() {
+        return toMpPage(Constant.DATA_FIELD_NAME_UPDATE_TIME, false);
+    }
     /**
      * 内容
      */

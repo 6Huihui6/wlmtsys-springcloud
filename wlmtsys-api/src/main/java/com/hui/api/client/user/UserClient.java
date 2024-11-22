@@ -53,11 +53,11 @@ public interface UserClient {
 
     /**
      * 根据id查询单个学生信息
-     * @param id 用户id
+     * @param userId 用户id
      * @return 学生
      */
-    @GetMapping("/user/{id}")
-    UserDTO queryUserById(@PathVariable("id") Long id);
+    @GetMapping("/user/one")
+    UserDTO queryUserById(@RequestParam("id") Long userId);
 
 
 }

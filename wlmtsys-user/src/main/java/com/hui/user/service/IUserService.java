@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.hui.common.domain.dto.LoginUserDTO;
 import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
+import com.hui.model.user.dto.UserDTO;
 import com.hui.model.user.po.User;
 
 import javax.validation.Valid;
@@ -33,4 +34,6 @@ public interface IUserService extends IService<User> {
      * @return
      */
     ResponseResult register(LoginFormDTO loginFormDTO);
+
+    UserDTO queryUserById(Long id);
 }

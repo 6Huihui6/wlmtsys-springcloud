@@ -41,7 +41,7 @@ public class UserClientFallback implements FallbackFactory<UserClient> {
             }
 
             @Override
-            public UserDTO queryUserById(Long id) {
+            public UserDTO queryUserById(Long userId) {
                 return null;
             }
 

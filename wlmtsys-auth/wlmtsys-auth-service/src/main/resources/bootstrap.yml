@@ -20,6 +20,10 @@ spring:
             refresh: false
           - data-id: shared-logs.yaml # 共享日志配置
             refresh: false
+          - data-id: shared-mongo.yaml # 共享mq配置
+            refresh: false
+          - data-id: shared-rabbitMQ.yaml # 共享 rabbitMQ配置
+            refresh: false
 
   mail:
     host: smtp.163.com

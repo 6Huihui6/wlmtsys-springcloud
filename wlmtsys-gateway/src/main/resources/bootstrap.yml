@@ -23,7 +23,7 @@ spring:
             refresh: false
           - data-id: shared-feign.yaml # 共享feign配置
             refresh: false
-          - data-id: shared-mq.yaml # 共享mq配置
+          - data-id: shared-rabbitMQ.yaml # 共享mq配置
             refresh: false
           - data-id: shared-xxljob.yaml # 共享mq配置
             refresh: false
@@ -67,10 +67,10 @@ spring:
           uri: lb://learning-service
           predicates:
             - Path=/ls/**
-        - id: ps
-          uri: lb://pay-service
+        - id: pss
+          uri: lb://post-service
           predicates:
-            - Path=/ps/**
+            - Path=/pss/**
         - id: ts
           uri: lb://trade-service
           predicates:

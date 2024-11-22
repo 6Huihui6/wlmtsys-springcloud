@@ -7,8 +7,10 @@ import com.hui.common.enums.AppHttpCodeEnum;
 import com.hui.common.exceptions.BadRequestException;
 import com.hui.common.exceptions.ForbiddenException;
 import com.hui.common.utils.AssertUtils;
+import com.hui.common.utils.BeanUtils;
 import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
+import com.hui.model.user.dto.UserDTO;
 import com.hui.model.user.enums.UserStatus;
 import com.hui.model.user.po.User;
 import com.hui.model.user.po.UserDetail;
@@ -114,6 +116,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 //        return "success";
     }
 
+
+
     public User loginByVerifyCode(String email, String code) {
         // 1.校验验证码
         boolean isRight = verifyCaptcha(email, code);
@@ -183,6 +187,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
                 break;
         }
         return roleId;
+    }
+
+    @Override
+    public UserDTO queryUserById(Long id) {
+        // 1.查询用户信息
+        User user = lambdaQuery().eq(User::getId, id).one();
+        UserDetail  detail = detailService.getById(id);
+        UserDTO userDTO = BeanUtils.copyBean(user, UserDTO.class);
+        BeanUtils.copyBean(detail, UserDTO.class);
+        return userDTO;
     }
 
 }

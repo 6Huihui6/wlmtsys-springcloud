@@ -14,7 +14,7 @@
         <module>wlmtsys-auth</module>
         <module>wlmtsys-user</module>
         <module>wlmtsys-learning</module>
-        <module>wlmtsys-ports</module>
+        <module>wlmtsys-post</module>
         <module>wlmtsys-gateway</module>
         <module>wlmtsys-model</module>
         <module>wlmtsys-info</module>

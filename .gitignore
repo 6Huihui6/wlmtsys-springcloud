@@ -36,3 +36,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+/dataSources/
+/dataSources.local.xml
+/logs/
+*.log
+*.logs

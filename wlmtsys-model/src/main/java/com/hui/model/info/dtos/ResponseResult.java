@@ -53,7 +53,7 @@ public class ResponseResult<T> implements Serializable {
     }
 
     public static ResponseResult okResult(Object data) {
-        ResponseResult result = setAppHttpCodeEnum(AppHttpCodeEnum.SUCCESS, AppHttpCodeEnum.SUCCESS.getErrorMessage());
+        ResponseResult result = setAppHttpCodeEnum(AppHttpCodeEnum.SUCCESS, AppHttpCodeEnum.SUCCESS.getMessage());
         if(data!=null) {
             result.setData(data);
         }
@@ -61,19 +61,19 @@ public class ResponseResult<T> implements Serializable {
     }
 
     public static ResponseResult errorResult(AppHttpCodeEnum enums){
-        return setAppHttpCodeEnum(enums,enums.getErrorMessage());
+        return setAppHttpCodeEnum(enums,enums.getMessage());
     }
 
-    public static ResponseResult errorResult(AppHttpCodeEnum enums, String errorMessage){
-        return setAppHttpCodeEnum(enums,errorMessage);
+    public static ResponseResult errorResult(AppHttpCodeEnum enums, String message){
+        return setAppHttpCodeEnum(enums,message);
     }
 
     public static ResponseResult setAppHttpCodeEnum(AppHttpCodeEnum enums){
-        return okResult(enums.getCode(),enums.getErrorMessage());
+        return okResult(enums.getCode(),enums.getMessage());
     }
 
-    private static ResponseResult setAppHttpCodeEnum(AppHttpCodeEnum enums, String errorMessage){
-        return okResult(enums.getCode(),errorMessage);
+    private static ResponseResult setAppHttpCodeEnum(AppHttpCodeEnum enums, String message){
+        return okResult(enums.getCode(),message);
     }
 
     public ResponseResult<?> error(Integer code, String msg) {
@@ -108,12 +108,12 @@ public class ResponseResult<T> implements Serializable {
         this.code = code;
     }
 
-    public String getErrorMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public void setErrorMessage(String errorMessage) {
-        this.message = errorMessage;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public T getData() {

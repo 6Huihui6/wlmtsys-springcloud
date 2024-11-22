@@ -11,7 +11,7 @@ public interface Constant {
     String DATA_FIELD_NAME_ID = "id";
 
     // 数据字段 - create_time
-    String DATA_FIELD_NAME_CREATE_TIME = "create_time";
+    String DATA_FIELD_NAME_CREATE_TIME = "created_time";
     String DATA_FIELD_NAME_CREATE_TIME_CAMEL = "createTime";
 
     // 数据字段 - update_time

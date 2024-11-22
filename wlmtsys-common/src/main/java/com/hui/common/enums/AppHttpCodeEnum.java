@@ -17,6 +17,8 @@ public enum AppHttpCodeEnum {
     // 参数错误 500~1000
     PARAM_REQUIRE(500,"缺少参数"),
     PARAM_INVALID(501,"无效参数"),
+    PARAM_REPEAT(508,"不能重复点赞"),
+    PARAM_NOT_LIKE(509,"当前用户未点赞"),
     PARAM_IMAGE_FORMAT_ERROR(502,"图片格式有误"),
     SERVER_ERROR(503,"服务器内部错误"),
     CODE_ERROR(504,"验证码错误或已失效"),
@@ -32,18 +34,18 @@ public enum AppHttpCodeEnum {
     MATERIASL_REFERENCE_FAIL(3501,"素材引用失效");
 
     int code;
-    String errorMessage;
+    String message;
 
-    AppHttpCodeEnum(int code, String errorMessage){
+    AppHttpCodeEnum(int code, String message){
         this.code = code;
-        this.errorMessage = errorMessage;
+        this.message = message;
     }
 
     public int getCode() {
         return code;
     }
 
-    public String getErrorMessage() {
-        return errorMessage;
+    public String getMessage() {
+        return message;
     }
 }

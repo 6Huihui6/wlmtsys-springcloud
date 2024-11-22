@@ -2,6 +2,10 @@ package com.hui.common.constants;
 
 public interface MqConstants {
     interface Exchange{
+        /*评论有关的交换机*/
+        String COMMENT_EXCHANGE = "comment.topic";
+
+
         /*岗位有关的交换机*/
         String JOBS_EXCHANGE = "jobs.topic";
 
@@ -32,6 +36,11 @@ public interface MqConstants {
         String ERROR_QUEUE_TEMPLATE = "error.{}.queue";
     }
     interface Key{
+        /*评论有关的RoutingKey*/
+        String COMMENT_NEW_KEY = "comment.new";
+        String COMMENT_KEY_TEMPLATE = "comment.changed";
+        String COMMENT_LIST_KEY = "comment.list.changed";
+        String COMMENT_DELETE_KEY = "comment.delete";
         /*课程有关的 RoutingKey*/
         String JOBS_NEW_KEY = "jobs.new";
         String JOBS_KEY_TEMPLATE = "jobs.changed";

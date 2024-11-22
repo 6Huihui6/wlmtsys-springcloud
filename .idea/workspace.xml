@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/mess/ArticleVisitStreamMess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/mess/UpdatePostMess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/CollectBehaviorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/CommentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/CommentLikeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/CommentRepayLikeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/CommentRepaySaveDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/PageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/PostDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/CommentLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/CommentRepay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/CommentRepayLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/ChannelVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/CommentRepayListVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/CommentRepayVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/CommentVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/PostApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/BehaviorConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/CommonConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/listener/CommentNewListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentRepayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentRepayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/bootstrap-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys_post.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/fallback/UserClientFallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/fallback/UserClientFallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/src/main/java/com/hui/auth/common/constants/JwtConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-common/src/main/java/com/hui/auth/common/constants/JwtConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-gateway-sdk/src/test/java/com/hui/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-resource-sdk/src/test/java/com/hui/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/test/java/com/hui/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/test/java/com/hui/auth/SendemailApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/MqConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/MqConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/domain/dto/PageDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/domain/dto/PageResponseResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/domain/dto/ResponseResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/enums/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/enums/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/resources/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/src/main/resources/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/filter/AuthorizeFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/java/com/hui/gateway/util/AppJwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/common/query/PageQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/common/query/PageQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/CommentRepayDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/CommentRepayDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/CommentSaveDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/CommentSaveDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/LikesBehaviorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/dto/LikesBehaviorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-ports/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/properties/JwtProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/resources/bootstrap-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/resources/bootstrap-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/resources/bootstrap.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;6Huihui6&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/6Huihui6/wlmtsys-springcloud.git&quot;,
+    &quot;accountId&quot;: &quot;545197a8-ba2f-4b19-887f-4483989c9cec&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\.m2\repository" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.9.8-bin\apache-maven-3.9.8\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2p0mZmdUpE21GE608L4xDHCIjiU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.SendemailApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SendemailApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-auth [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-auth [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-auth [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-model [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-model [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-model [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-post [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsysplus [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsysplus [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsysplus [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.InfoApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PostApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hui&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/project/wlmtsysplus/wlmtsys-common/src/main/java/com/hui/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.36551723&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\wlmtsysplus\wlmtsys-common\src\main\java\com\hui\common" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-post\src\main\java\com\hui\post" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model\post\po" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model" />
+      <recent name="E:\project\wlmtsysplus\wlmtsys-post\src\main\java\com\hui\post\controller" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hui.auth" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hui.model.post.vo" />
+      <recent name="com.hui.model.post.dto" />
+      <recent name="com.hui.post.constants" />
+      <recent name="com.hui.post.service" />
+      <recent name="com.hui.post.service.impl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PostApplication">
+    <configuration name="SendemailApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wlmtsys-auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hui.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hui.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.hui.auth.SendemailApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendemailApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wlmtsys-auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hui.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hui.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.hui.auth.SendemailApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="wlmtsys-auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="wlmtsys-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="wlmtsys-info" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.info.InfoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="wlmtsys-post" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.post.PostApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hui.post.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="wlmtsys-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.SendemailApplicationTests" />
+      <item itemvalue="JUnit.SendemailApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.InfoApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.PostApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PostApplication" />
+        <item itemvalue="JUnit.SendemailApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.SendemailApplicationTests" />
+        <item itemvalue="JUnit.SendemailApplicationTests" />
+        <item itemvalue="JUnit.SendemailApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="网关修改配置文件" />
+      <created>1731911429852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731911429852</updated>
+      <workItem from="1731911433975" duration="23553000" />
+      <workItem from="1731992883308" duration="27818000" />
+      <workItem from="1732027354184" duration="1053000" />
+      <workItem from="1732077649488" duration="24840000" />
+      <workItem from="1732173888640" duration="2000" />
+      <workItem from="1732174536336" duration="20402000" />
+      <workItem from="1732241819516" duration="12630000" />
+      <workItem from="1732258950883" duration="5140000" />
+    </task>
+    <task id="LOCAL-00001" summary="添加用户模打包插件">
+      <option name="closed" value="true" />
+      <created>1731911669986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731911669986</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加用户模打包插件">
+      <option name="closed" value="true" />
+      <created>1731913626561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731913626561</updated>
+    </task>
+    <task id="LOCAL-00003" summary="邮箱登录、邮箱注册、邮箱验证码登录">
+      <option name="closed" value="true" />
+      <created>1731941901441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731941901441</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改发送验证码模板">
+      <option name="closed" value="true" />
+      <created>1731994040728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731994040728</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="网关修改配置文件" />
+    <MESSAGE value="添加用户模打包插件" />
+    <MESSAGE value="邮箱登录、邮箱注册、邮箱验证码登录" />
+    <MESSAGE value="修改发送验证码模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改发送验证码模板" />
+  </component>
+</project>
