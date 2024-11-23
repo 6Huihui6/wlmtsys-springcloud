@@ -34,7 +34,7 @@ public class CommentController {
         return commentService.like(dto);
     }
 
-    @ApiOperation("查询评论")
+    @ApiOperation("查询评论---operation为0 代表当前用户已点赞的评论")
     @PostMapping("/load")
     public ResponseResult findByArticleId(@RequestBody CommentDto dto){
         return commentService.findByArticleId(dto);

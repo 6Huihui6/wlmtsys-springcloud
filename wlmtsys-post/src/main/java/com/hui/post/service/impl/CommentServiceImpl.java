@@ -15,7 +15,7 @@ import com.hui.model.post.po.Comment;
 import com.hui.model.post.po.CommentLike;
 import com.hui.model.post.po.CommentRepayLike;
 import com.hui.model.post.vo.CommentVo;
-import com.hui.model.user.dto.UserDTO;
+import com.hui.model.user.vos.UserVo;
 import com.hui.post.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -63,7 +63,7 @@ public class CommentServiceImpl implements CommentService {
         }
         //3.安全检查 自行实现
         //4.保存评论
-        UserDTO user = userClient.queryUserById(userId);
+        UserVo user = userClient.queryUserById(Math.toIntExact(userId));
         if (user == null) {
             return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_INVALID, "当前登录信息有误");
         }
@@ -177,9 +177,6 @@ public class CommentServiceImpl implements CommentService {
         List<String> idList = list.stream().map(x -> x.getId()).collect(Collectors.toList());
         Query query1 = Query.query(Criteria.where("commentId").in(idList).and("authorId").is(userId));
         List<CommentLike> apCommentLikes = mongoTemplate.find(query1, CommentLike.class);
-        if (apCommentLikes == null) {
-            return ResponseResult.okResult(list);
-        }
 
         List<CommentVo> resultList = new ArrayList<>();
         list.forEach(x -> {

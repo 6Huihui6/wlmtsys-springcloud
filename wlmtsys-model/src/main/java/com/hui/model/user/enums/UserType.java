@@ -9,9 +9,10 @@ import lombok.Getter;
 
 @Getter
 public enum UserType implements BaseEnum {
-    STAFF(1, "其他员工"),
-    INTERNAL_USER(2, "内部人员"),
-    EXTERNAL_USER(3, "外部人员"),
+//    用户类型：1-内部人员, 2-外部人员，3-管理员
+    STAFF(3, "其他员工"),
+    INTERNAL_USER(1, "内部人员"),
+    EXTERNAL_USER(2, "外部人员"),
     ;
     @EnumValue
     int value;

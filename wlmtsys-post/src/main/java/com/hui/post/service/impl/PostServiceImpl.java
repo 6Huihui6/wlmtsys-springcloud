@@ -1,6 +1,7 @@
 package com.hui.post.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.hui.api.client.user.UserClient;
 import com.hui.common.enums.AppHttpCodeEnum;
 import com.hui.common.utils.BeanUtils;
 import com.hui.common.utils.CollUtils;
@@ -14,6 +15,8 @@ import com.hui.model.post.dto.PageDto;
 import com.hui.model.post.dto.PostDto;
 import com.hui.model.post.po.Post;
 import com.hui.model.post.vo.PostVo;
+import com.hui.model.user.vos.UserDetailVO;
+import com.hui.model.user.vos.UserVo;
 import com.hui.post.constants.BehaviorConstants;
 import com.hui.post.mapper.PostMapper;
 import com.hui.post.service.IImagesService;
@@ -27,6 +30,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -42,6 +47,7 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
 
     private final IImagesService imagesService;
     private final StringRedisTemplate redisTemplate ;
+    private final UserClient userClient ;
     /**
      * 新增或编辑帖子
      *
@@ -91,8 +97,6 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
 
     /**
      * 获取帖子列表
-     *
-     * @param pageDto
      */
     @Override
     public ResponseResult getPostList(PageDto pageDto) {
@@ -106,9 +110,13 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
             return ResponseResult.okResult(PageDTO.empty(page));
         }
         List<PostVo> postVos = BeanUtils.copyList(records, PostVo.class);
-
-
+        List<Integer> uids = postVos.stream().map(PostVo::getUserId).collect(Collectors.toList());
+        List<UserDetailVO> userDetailVOS = userClient.queryUserByIds(uids);
+        Map<Integer, UserDetailVO> collect = userDetailVOS.stream().collect(Collectors.toMap(UserDetailVO::getId, userDetailVO -> userDetailVO));
+        // 2.查询当前用户
+        Long userId = UserContext.getUser();
         for (PostVo postVo : postVos) {
+            postVo.setUserDetailVO(collect.get(postVo.getUserId()));
             // 统计点赞总数
 //            Long likedTimes = redisTemplate.opsForSet()
 //                   .size(BehaviorConstants.LIKE_BEHAVIOR + postVo.getPostId());
@@ -117,12 +125,12 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
 //            Long collectTimes = redisTemplate.opsForSet()
 //                   .size(BehaviorConstants.COLLECTION_BEHAVIOR + postVo.getPostId());
 //            postVo.setCollection(collectTimes.intValue());
-            //查询当前用户是否点赞BehaviorConstants.LIKE_BEHAVIOR + dto.getPostsId();
-//            boolean isLiked = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.LIKE_BEHAVIOR + id, userVO.getId().toString()));
-//            postVo.setLikedOrNot(isLiked);
-//            //查询当前用户是否收藏BehaviorConstants.COLLECTION_BEHAVIOR + dto.getPostsId();
-//            boolean isCollected = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.COLLECTION_BEHAVIOR + id, userVO.getId().toString()));
-//            postVo.setCollectedOrNot(isCollected);
+//            查询当前用户是否点赞BehaviorConstants.LIKE_BEHAVIOR + dto.getPostsId();
+            boolean isLiked = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.LIKE_BEHAVIOR + postVo.getPostId(), userId.toString()));
+            postVo.setLikedOrNot(isLiked);
+            //查询当前用户是否收藏BehaviorConstants.COLLECTION_BEHAVIOR + dto.getPostsId();
+            boolean isCollected = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.COLLECTION_BEHAVIOR + postVo.getPostId(), userId.toString()));
+            postVo.setCollectedOrNot(isCollected);
         }
 
         return ResponseResult.okResult(PageDTO.of(page,postVos));
@@ -130,8 +138,6 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
 
     /**
      * 保存评论数
-     *
-     * @param articleVisitStreamMess
      */
     @Override
     public void saveCommentCount(ArticleVisitStreamMess articleVisitStreamMess) {
@@ -147,8 +153,6 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
     }
     /**
      * 点赞
-     *
-     * @param dto
      */
     @Override
     public ResponseResult like(LikesBehaviorDto dto) {
@@ -253,7 +257,26 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
      */
     @Override
     public ResponseResult getPostDetail(Integer postId) {
-        return null;
+        // 1.校验参数
+        if (postId == null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_REQUIRE);
+        }
+        Post post = getById(postId);
+        if (post == null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.DATA_NOT_EXIST);
+        }
+        PostVo postVo = BeanUtils.copyBean(post, PostVo.class);
+        // 2.查询用户详情
+        UserVo userVo = userClient.queryUserById(post.getUserId());
+        UserDetailVO userDetailVO = BeanUtils.copyProperties(userVo, UserDetailVO.class);
+        postVo.setUserDetailVO(userDetailVO);
+        // 3.查询当前用户是否点赞
+        boolean isLiked = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.LIKE_BEHAVIOR + postId, UserContext.getUser().toString()));
+        postVo.setLikedOrNot(isLiked);
+        // 4.查询当前用户是否收藏
+        boolean isCollected = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.COLLECTION_BEHAVIOR + postId, UserContext.getUser().toString()));
+        postVo.setCollectedOrNot(isCollected);
+        return ResponseResult.okResult(postVo);
     }
 
 }

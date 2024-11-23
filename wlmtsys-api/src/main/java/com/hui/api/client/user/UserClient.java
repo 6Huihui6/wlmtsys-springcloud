@@ -7,6 +7,8 @@ import com.hui.common.domain.dto.LoginUserDTO;
 import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.dto.UserDTO;
+import com.hui.model.user.vos.UserDetailVO;
+import com.hui.model.user.vos.UserVo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,8 +50,7 @@ public interface UserClient {
      * @return 用户集合
      */
     @GetMapping("/user/list")
-    List<UserDTO> queryUserByIds(@RequestParam("ids") Iterable<Long> ids);
-
+    List<UserDetailVO> queryUserByIds(@RequestParam("ids") Iterable<Integer> ids);
 
     /**
      * 根据id查询单个学生信息
@@ -57,7 +58,7 @@ public interface UserClient {
      * @return 学生
      */
     @GetMapping("/user/one")
-    UserDTO queryUserById(@RequestParam("id") Long userId);
+    UserVo queryUserById(@RequestParam("id") Integer userId);
 
 
 }

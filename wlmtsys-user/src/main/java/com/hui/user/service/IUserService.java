@@ -36,7 +36,7 @@ public interface IUserService extends IService<User> {
      */
     ResponseResult register(LoginFormDTO loginFormDTO);
 
-    UserDTO queryUserById(Long id);
+    UserVo queryUserById(Integer id);
 
     /**
      * 获取当前登录用户信息

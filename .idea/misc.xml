@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/pom.xml" />
         <option value="$PROJECT_DIR$/wlmtsys-api/pom.xml" />
         <option value="$PROJECT_DIR$/wlmtsys-ports/pom.xml" />
+        <option value="$PROJECT_DIR$/wlmtsys-post/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

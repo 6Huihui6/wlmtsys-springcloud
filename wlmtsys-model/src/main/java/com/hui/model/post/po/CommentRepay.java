@@ -58,4 +58,9 @@ public class CommentRepay {
      */
     private Date updatedTime;
 
+    /**
+     * 作者头像
+     */
+    private String image;
+
 }

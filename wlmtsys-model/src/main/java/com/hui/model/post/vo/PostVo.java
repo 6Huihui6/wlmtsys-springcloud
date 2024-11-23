@@ -3,6 +3,7 @@ package com.hui.model.post.vo;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hui.model.user.vos.UserDetailVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -85,6 +86,9 @@ public class PostVo implements Serializable {
 
     @ApiModelProperty(value = "拒绝理由")
     private String reason;
+
+
+    private UserDetailVO userDetailVO;
 
 
 }

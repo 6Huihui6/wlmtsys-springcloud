@@ -74,17 +74,14 @@ public class UserDTO {
     @ApiModelProperty(value = "更新者id")
     private Long updater;
 
-    @ApiModelProperty(value = "部门id")
+    @ApiModelProperty(value = "部门id，1为管理部，2为运营部，3为技术部，4为指导老师")
     private Long depId;
-
-    private String salt;
 
     /**
      * 手机号
      */
     private String cellPhone;
     private String password;
-    private Integer sex;
     /**
      * 账户状态：0-禁用，1-正常
      */

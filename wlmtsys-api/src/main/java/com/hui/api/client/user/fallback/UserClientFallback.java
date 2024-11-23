@@ -7,6 +7,8 @@ import com.hui.common.domain.dto.LoginUserDTO;
 import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.dto.UserDTO;
+import com.hui.model.user.vos.UserDetailVO;
+import com.hui.model.user.vos.UserVo;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.openfeign.FallbackFactory;
@@ -36,12 +38,12 @@ public class UserClientFallback implements FallbackFactory<UserClient> {
             }
 
             @Override
-            public List<UserDTO> queryUserByIds(Iterable<Long> ids) {
+            public List<UserDetailVO> queryUserByIds(Iterable<Integer> ids) {
                 return Collections.emptyList();
             }
 
             @Override
-            public UserDTO queryUserById(Long userId) {
+            public UserVo queryUserById(Integer userId) {
                 return null;
             }
 

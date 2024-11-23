@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @ApiModel(description = "用户详情")
 public class UserDetailVO {
     @ApiModelProperty(value = "用户id", example = "1")
-    private Long id;
+    private Integer id;
     @ApiModelProperty(value = "头像", example = "default-icon.jpg")
     private String image;
     @ApiModelProperty(value = "手机号", example = "13800010004")
@@ -33,5 +33,6 @@ public class UserDetailVO {
     private LocalDateTime createTime;
     @ApiModelProperty(value = "角色名称", example = "教师")
     private String roleName;
+    private Integer type;
 
 }

@@ -30,7 +30,7 @@ public class PostController {
     private final IPostService postService;
 
     @ApiOperation(value = "获取帖子列表")
-    @PostMapping("/list")
+    @GetMapping("/list")
     public ResponseResult list(@RequestBody PageDto pageDto) {
         return postService.getPostList(pageDto);
     }
@@ -52,7 +52,6 @@ public class PostController {
     public ResponseResult likeOrCancel(@RequestBody LikesBehaviorDto dto ) {
         return postService.like(dto);
     }
-
     /**
      * 用户点赞或取消点赞·接口
      */

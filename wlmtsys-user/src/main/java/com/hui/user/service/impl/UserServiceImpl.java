@@ -50,9 +50,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     /**
      * 登录
      *
-     * @param loginDTO
-     * @param isStaff
-     * @return
      */
     @Override
     public LoginUserDTO queryUserDetail(LoginFormDTO loginDTO, boolean isStaff) {
@@ -86,8 +83,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     /**
      * 注册
      *
-     * @param loginFormDTO
-     * @return
      */
     @Override
     public ResponseResult register(LoginFormDTO loginFormDTO) {
@@ -176,30 +171,24 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         return user;
     }
     private Long handleRoleId(User user) {
-        Long roleId = 0L;
-        switch (user.getType()) {
-            case INTERNAL_USER:
-                roleId =INTERNAL_USER_ID  ;
-                break;
-            case EXTERNAL_USER:
-                roleId = EXTERNAL_USER_ID;
-                break;
-            case STAFF:
+        return switch (user.getType()) {
+            case INTERNAL_USER -> INTERNAL_USER_ID;
+            case EXTERNAL_USER -> EXTERNAL_USER_ID;
+            case STAFF -> {
                 UserDetail detail = detailService.getById(user.getId());
-                roleId = detail.getRoleId();
-                break;
-        }
-        return roleId;
+                yield detail.getRoleId();
+            }
+        };
     }
 
     @Override
-    public UserDTO queryUserById(Long id) {
+    public UserVo queryUserById(Integer id) {
         // 1.查询用户信息
         User user = lambdaQuery().eq(User::getId, id).one();
         UserDetail  detail = detailService.getById(id);
-        UserDTO userDTO = BeanUtils.copyBean(user, UserDTO.class);
-        BeanUtils.copyProperties(detail, UserDTO.class);
-        return userDTO;
+        UserVo userVo = BeanUtils.copyBean(user, UserVo.class);
+        BeanUtils.copyProperties(detail, UserVo.class);
+        return userVo;
     }
 
     /**

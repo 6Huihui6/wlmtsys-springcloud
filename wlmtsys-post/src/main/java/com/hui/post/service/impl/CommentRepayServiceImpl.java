@@ -15,14 +15,12 @@ import com.hui.model.post.po.CommentRepayLike;
 import com.hui.model.post.po.Comment;
 import com.hui.model.post.vo.CommentRepayVo;
 import com.hui.model.user.dto.UserDTO;
-import com.hui.model.user.po.User;
+import com.hui.model.user.vos.UserVo;
 import com.hui.post.service.CommentRepayService;
-import com.hui.utils.thread.AppThreadLocalUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -76,7 +74,7 @@ public class CommentRepayServiceImpl implements CommentRepayService {
         List<String> idList = list.stream().map(x -> x.getId()).collect(Collectors.toList());
         Query query1 = Query.query(Criteria.where("commentRepayId").in(idList).and("authorId").is(userId));
         List<CommentRepayLike> commentRepayLikes = mongoTemplate.find(query1, CommentRepayLike.class);
-        if(commentRepayLikes == null || commentRepayLikes.size() == 0 ){
+        if(commentRepayLikes.isEmpty()){
             return ResponseResult.okResult(list);
         }
 
@@ -115,7 +113,7 @@ public class CommentRepayServiceImpl implements CommentRepayService {
         //3.安全检查 自行实现
 
         //4.保存评论
-        UserDTO dbUser = userClient.queryUserById(userId);
+        UserVo dbUser = userClient.queryUserById(Math.toIntExact(userId));
         if(dbUser == null){
             return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_INVALID,"当前登录信息有误");
         }
@@ -127,13 +125,16 @@ public class CommentRepayServiceImpl implements CommentRepayService {
         commentRepay.setAuthorName(dbUser.getUsername());
         commentRepay.setUpdatedTime(new Date());
         commentRepay.setLikes(0);
+        commentRepay.setImage(dbUser.getImage());
         commentRepay.setPostId(dto.getPostId());
         mongoTemplate.save(commentRepay);
 
         //5更新回复数量
         Comment apComment = mongoTemplate.findById(dto.getCommentId(), Comment.class);
-        apComment.setReply(apComment.getReply()+1);
-        mongoTemplate.save(apComment);
+        if (apComment != null) {
+            apComment.setReply(apComment.getReply()+1);
+            mongoTemplate.save(apComment);
+        }
 
         //发送消息，进行聚合
         UpdatePostMess mess = new UpdatePostMess();
@@ -181,16 +182,17 @@ public class CommentRepayServiceImpl implements CommentRepayService {
                 return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_NOT_LIKE);
             }
             //更新评论点赞数量
-            int tmp = commentRepay.getLikes()-1;
+            int tmp = 0;
+            if (commentRepay != null) {
+                tmp = commentRepay.getLikes()-1;
             tmp = tmp < 1 ? 0 : tmp;
             commentRepay.setLikes(tmp);
             mongoTemplate.save(commentRepay);
-
+            }
             //删除评论点赞
             Query query1 = Query.query(Criteria.where("commentRepayId").is(commentRepay.getId()).and("authorId").is(userId));
             mongoTemplate.remove(query1, CommentRepayLike.class);
         }
-
         //4.取消点赞
         Map<String,Object> result = new HashMap<>();
         result.put("likes", commentRepay.getLikes());

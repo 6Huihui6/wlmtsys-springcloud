@@ -33,7 +33,6 @@ public class User implements Serializable {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
-    private String salt;
     /**
      * 用户名
      */
@@ -45,14 +44,15 @@ public class User implements Serializable {
     private String cellPhone;
     private String password;
     private String image;
-    private Integer sex;
     /**
      * 账户状态：0-禁用，1-正常
      */
+    @ApiModelProperty(value = "账户状态：0-禁用，1-正常")
     private UserStatus status;
     /**
      * 用户类型：1-其他员工, 2-普通学员，3-老师
      */
+    @ApiModelProperty(value = "用户类型：1-内部人员, 2-外部人员，3-管理员")
     private UserType type;
     private LocalDateTime createTime;
     private String openid;

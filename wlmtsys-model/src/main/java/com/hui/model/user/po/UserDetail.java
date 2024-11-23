@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+
+import com.hui.model.user.enums.UserType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -34,7 +36,7 @@ public class UserDetail implements Serializable {
     private Integer userId;
 
     @ApiModelProperty(value = "用户类型：1-员工, 2-普通学员，3-老师")
-    private Integer type;
+    private UserType type;
 
 
 
@@ -84,7 +86,7 @@ public class UserDetail implements Serializable {
     @ApiModelProperty(value = "更新者id")
     private Long updater;
 
-    @ApiModelProperty(value = "部门id")
+    @ApiModelProperty(value = "部门id，1为管理部，2为运营部，3为技术部，4为指导老师")
     private Long depId;
 
 

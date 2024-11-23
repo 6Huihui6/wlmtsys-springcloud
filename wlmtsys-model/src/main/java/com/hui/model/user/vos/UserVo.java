@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hui.model.user.enums.UserStatus;
-import com.hui.model.user.enums.UserType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -30,7 +29,7 @@ import java.time.LocalDateTime;
 @ApiModel(value="User对象", description="")
 public class UserVo implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final Integer serialVersionUID = 1;
 
     @ApiModelProperty(value = "关联用户id")
     @TableId(value = "user_id", type = IdType.AUTO)
@@ -71,7 +70,7 @@ public class UserVo implements Serializable {
     private String photo;
 
     @ApiModelProperty(value = "角色id")
-    private Long roleId;
+    private Integer roleId;
 
     @ApiModelProperty(value = "创建时间")
     private LocalDateTime createTime;
@@ -80,15 +79,14 @@ public class UserVo implements Serializable {
     private LocalDateTime updateTime;
 
     @ApiModelProperty(value = "创建者id")
-    private Long creater;
+    private Integer creater;
 
     @ApiModelProperty(value = "更新者id")
-    private Long updater;
+    private Integer updater;
 
     @ApiModelProperty(value = "部门id")
-    private Long depId;
-
-    private String salt;
+    private Integer depId;
+    
     /**
      * 用户名
      */
@@ -99,7 +97,6 @@ public class UserVo implements Serializable {
      */
     private String cellPhone;
     private String password;
-    private Integer sex;
     /**
      * 账户状态：0-禁用，1-正常
      */
