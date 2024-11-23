@@ -7,6 +7,7 @@ import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.dto.UserDTO;
 import com.hui.model.user.po.User;
+import com.hui.model.user.vos.UserVo;
 
 import javax.validation.Valid;
 
@@ -36,4 +37,9 @@ public interface IUserService extends IService<User> {
     ResponseResult register(LoginFormDTO loginFormDTO);
 
     UserDTO queryUserById(Long id);
+
+    /**
+     * 获取当前登录用户信息
+     * */
+    ResponseResult<UserVo> getCurrentLoginUser();
 }

@@ -11,16 +11,12 @@ import java.time.LocalDateTime;
 public class UserDetailVO {
     @ApiModelProperty(value = "用户id", example = "1")
     private Long id;
-    @ApiModelProperty(value = "名字", example = "张三")
-    private String name;
     @ApiModelProperty(value = "头像", example = "default-icon.jpg")
-    private String icon;
+    private String image;
     @ApiModelProperty(value = "手机号", example = "13800010004")
     private String cellPhone;
     @ApiModelProperty(value = "用户名", example = "13800010004")
     private String username;
-    @ApiModelProperty(value = "邮箱")
-    private String email;
     @ApiModelProperty(value = "QQ号码")
     private String qq;
     @ApiModelProperty(value = "个人介绍")
@@ -37,4 +33,5 @@ public class UserDetailVO {
     private LocalDateTime createTime;
     @ApiModelProperty(value = "角色名称", example = "教师")
     private String roleName;
+
 }

@@ -5,6 +5,7 @@ import com.hui.common.domain.dto.LoginUserDTO;
 import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.dto.UserDTO;
+import com.hui.model.user.vos.UserVo;
 import com.hui.user.service.IUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -58,4 +59,9 @@ public class UserController {
         return usersService.queryUserById(id);
     }
 
+    @ApiOperation(value = "获取当前登录用户信息")
+    @GetMapping("/current")
+    public ResponseResult<UserVo> getCurrentLoginUser(){
+        return usersService.getCurrentLoginUser();
+    }
 }

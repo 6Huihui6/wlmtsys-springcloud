@@ -36,17 +36,14 @@ public class UserDetail implements Serializable {
     @ApiModelProperty(value = "用户类型：1-员工, 2-普通学员，3-老师")
     private Integer type;
 
-    @ApiModelProperty(value = "名字")
-    private String name;
+
 
     @ApiModelProperty(value = "性别：0-男性，1-女性")
     private Integer gender;
 
     @ApiModelProperty(value = "头像地址")
-    private String icon;
+    private String image;
 
-    @ApiModelProperty(value = "邮箱")
-    private String email;
 
     @ApiModelProperty(value = "QQ号码")
     private String qq;

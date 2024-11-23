@@ -13,6 +13,7 @@ import com.hui.model.post.dto.LikesBehaviorDto;
 import com.hui.model.post.dto.PageDto;
 import com.hui.model.post.dto.PostDto;
 import com.hui.model.post.po.Post;
+import com.hui.model.post.vo.PostVo;
 import com.hui.post.constants.BehaviorConstants;
 import com.hui.post.mapper.PostMapper;
 import com.hui.post.service.IImagesService;
@@ -104,7 +105,27 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
         if (CollUtils.isEmpty(records)) {
             return ResponseResult.okResult(PageDTO.empty(page));
         }
-        return ResponseResult.okResult(PageDTO.of(page,records));
+        List<PostVo> postVos = BeanUtils.copyList(records, PostVo.class);
+
+
+        for (PostVo postVo : postVos) {
+            // 统计点赞总数
+//            Long likedTimes = redisTemplate.opsForSet()
+//                   .size(BehaviorConstants.LIKE_BEHAVIOR + postVo.getPostId());
+//            postVo.setLikes(likedTimes.intValue());
+//            // 统计收藏总数
+//            Long collectTimes = redisTemplate.opsForSet()
+//                   .size(BehaviorConstants.COLLECTION_BEHAVIOR + postVo.getPostId());
+//            postVo.setCollection(collectTimes.intValue());
+            //查询当前用户是否点赞BehaviorConstants.LIKE_BEHAVIOR + dto.getPostsId();
+//            boolean isLiked = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.LIKE_BEHAVIOR + id, userVO.getId().toString()));
+//            postVo.setLikedOrNot(isLiked);
+//            //查询当前用户是否收藏BehaviorConstants.COLLECTION_BEHAVIOR + dto.getPostsId();
+//            boolean isCollected = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.COLLECTION_BEHAVIOR + id, userVO.getId().toString()));
+//            postVo.setCollectedOrNot(isCollected);
+        }
+
+        return ResponseResult.okResult(PageDTO.of(page,postVos));
     }
 
     /**

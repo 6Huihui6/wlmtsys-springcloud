@@ -62,7 +62,7 @@ public class Post implements Serializable {
     @ApiModelProperty(value = "转发数")
     private Integer forward;
 
-    @ApiModelProperty(value = "帖子频道,1技术,2生活,3情感,4其他")
+    @ApiModelProperty(value = "帖子频道")
     private Integer channelId;
 
     @ApiModelProperty(value = "标签")

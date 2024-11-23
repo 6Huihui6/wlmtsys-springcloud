@@ -8,12 +8,14 @@ import com.hui.common.exceptions.BadRequestException;
 import com.hui.common.exceptions.ForbiddenException;
 import com.hui.common.utils.AssertUtils;
 import com.hui.common.utils.BeanUtils;
+import com.hui.common.utils.UserContext;
 import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.user.dto.LoginFormDTO;
 import com.hui.model.user.dto.UserDTO;
 import com.hui.model.user.enums.UserStatus;
 import com.hui.model.user.po.User;
 import com.hui.model.user.po.UserDetail;
+import com.hui.model.user.vos.UserVo;
 import com.hui.user.mapper.UserMapper;
 import com.hui.user.service.IUserDetailService;
 import com.hui.user.service.IUserService;
@@ -24,6 +26,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import static com.hui.common.constants.ErrorInfo.Msg.USER_NOT_EXISTS;
 import static com.hui.user.constant.UserConstants.*;
 import static com.hui.user.constant.UserErrorInfo.Msg.*;
 
@@ -195,8 +198,24 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         User user = lambdaQuery().eq(User::getId, id).one();
         UserDetail  detail = detailService.getById(id);
         UserDTO userDTO = BeanUtils.copyBean(user, UserDTO.class);
-        BeanUtils.copyBean(detail, UserDTO.class);
+        BeanUtils.copyProperties(detail, UserDTO.class);
         return userDTO;
+    }
+
+    /**
+     * 获取当前登录用户信息
+     */
+    @Override
+    public ResponseResult<UserVo> getCurrentLoginUser() {
+        Long userId = UserContext.getUser();
+        User user = lambdaQuery().eq(User::getId, userId).one();
+        if (user == null) {
+            throw new BadRequestException(USER_NOT_EXISTS);
+        }
+        UserDetail  detail = detailService.getById(userId);
+        UserVo userVo = BeanUtils.copyBean(user, UserVo.class);
+        BeanUtils.copyProperties(detail, UserVo.class);
+        return ResponseResult.okResult(userVo);
     }
 
 }
