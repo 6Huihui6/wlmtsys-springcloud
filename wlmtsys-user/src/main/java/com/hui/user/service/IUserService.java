@@ -42,4 +42,9 @@ public interface IUserService extends IService<User> {
      * 获取当前登录用户信息
      * */
     ResponseResult<UserVo> getCurrentLoginUser();
+
+    /**
+     * 更新用户信息
+     */
+    ResponseResult updateUser(@Valid UserDTO userDTO);
 }

@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="获取帖子详情、获取帖子列表功能的实现">
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/ApplicationsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/query/EmployPageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/vo/ApplicationsStatusVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/EmployController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/EmployController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/InfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/InfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +84,7 @@
   "keyToString": {
     "JUnit.SendemailApplicationTests.contextLoads.executor": "Run",
     "JUnit.SendemailApplicationTests.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.wlmtsys-auth [clean].executor": "Run",
     "Maven.wlmtsys-auth [compile].executor": "Run",
     "Maven.wlmtsys-auth [install].executor": "Run",
@@ -132,11 +144,11 @@
       <recent name="com.hui.auth" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hui.model.info.dtos" />
+      <recent name="com.hui.model.info.query" />
+      <recent name="com.hui.model.info.vo" />
       <recent name="com.hui.model.user.vos" />
       <recent name="com.hui.model.post.dto" />
-      <recent name="com.hui.model.post.vo" />
-      <recent name="com.hui.post.constants" />
-      <recent name="com.hui.post.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -274,6 +286,7 @@
       <workItem from="1732336837117" duration="145000" />
       <workItem from="1732363259610" duration="10109000" />
       <workItem from="1732422065986" duration="265000" />
+      <workItem from="1732441585795" duration="18368000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />
@@ -339,6 +352,14 @@
     <MESSAGE value="修改发送验证码模板" />
     <MESSAGE value="帖子模块增改以及点赞评论收藏功能的实现" />
     <MESSAGE value="构建用户模块的vo，前端user模块的api，后端user模块的service，以及相关的测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="构建用户模块的vo，前端user模块的api，后端user模块的service，以及相关的测试用例" />
+    <MESSAGE value="获取帖子详情、获取帖子列表功能的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取帖子详情、获取帖子列表功能的实现" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression=".toMpPage()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

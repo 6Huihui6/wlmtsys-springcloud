@@ -86,4 +86,10 @@ public class UserController {
         return BeanUtils.copyList(list, UserDetailVO.class, (d, u) -> u.setType(d.getType().getValue()));
     }
 
+    @ApiOperation(value = "修改用户信息")
+    @PutMapping("/update")
+    public ResponseResult updateUser(@Valid @RequestBody UserDTO userDTO){
+        return usersService.updateUser(userDTO);
+    }
+
 }

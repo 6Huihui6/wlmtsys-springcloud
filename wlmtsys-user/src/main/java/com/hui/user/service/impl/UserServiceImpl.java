@@ -207,4 +207,21 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         return ResponseResult.okResult(userVo);
     }
 
+    /**
+     * 更新用户信息
+     *
+     * @param userDTO
+     */
+    @Override
+    public ResponseResult updateUser(UserDTO userDTO) {
+        Long userId = UserContext.getUser();
+        userDTO.setUserId(Math.toIntExact(userId));
+        User user = BeanUtils.copyBean(userDTO, User.class);
+        updateById(user);
+        UserDetail detail = detailService.getById(userId);
+        BeanUtils.copyBean(userDTO, UserDetail.class);
+        detailService.updateById(detail);
+        return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
+    }
+
 }

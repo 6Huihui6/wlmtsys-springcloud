@@ -107,7 +107,7 @@ public class InfoServiceImpl extends ServiceImpl<InfoMapper, Info> implements II
                 .like(query.getContent1() != null, Info::getContent1, query.getContent1())
                 .like(query.getContent2() != null, Info::getContent2, query.getContent2())
                 .like(query.getAddress() != null, Info::getAddress, query.getAddress())
-                .page(query.toMpPage());
+                .page(new Page<>(query.getPageNo(), query.getPageNo()));
         List<Info> records = page.getRecords();
         if (CollUtils.isEmpty(records)) {
             return PageDTO.empty(page);
