@@ -23,12 +23,13 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
-    @ApiOperation("添加评论")
+    @ApiOperation("添加一级评论")
     @PostMapping("/save")
     public ResponseResult saveComment(@RequestBody CommentSaveDto dto){
         return commentService.saveComment(dto);
     }
 
+    @ApiOperation("评论点赞")
     @PostMapping("/like")
     public ResponseResult like(@RequestBody CommentLikeDto dto){
         return commentService.like(dto);

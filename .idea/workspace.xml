@@ -4,33 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="帖子模块增改以及点赞评论收藏功能的实现">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="获取帖子详情、获取帖子列表功能的实现">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/fallback/UserClientFallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-api/src/main/java/com/hui/api/client/user/fallback/UserClientFallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/CommentRepay.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/CommentRepay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/PostVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/PostVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/enums/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/enums/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/po/UserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/po/UserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/vos/UserDetailVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/vos/UserDetailVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/vos/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/vos/UserVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentRepayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentRepayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/constant/UserConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/constant/UserConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,6 +273,7 @@
       <workItem from="1732336469444" duration="353000" />
       <workItem from="1732336837117" duration="145000" />
       <workItem from="1732363259610" duration="10109000" />
+      <workItem from="1732422065986" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />

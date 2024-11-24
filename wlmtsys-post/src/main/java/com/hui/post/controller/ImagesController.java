@@ -30,7 +30,7 @@ public class ImagesController {
 
     private final IImagesService imagesService;
 
-    @ApiOperation(value = "上传图片")
+    @ApiOperation(value = "上传图片---返回图片的url地址")
     @PostMapping("/upload")
     public String upload(@RequestParam("file") MultipartFile multipartFile) {
         return imagesService.upload(multipartFile);
