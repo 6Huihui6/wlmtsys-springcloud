@@ -4,7 +4,7 @@ BASE_PATH='/var/lib/jenkins/workspace/wlmtsys-dev-build'
 PROJECT_NAME=""
 PROJECT_PATH=''
 CONTAINER_NAME=""
-JAVA_OPTS="-Xms400m -Xmx400m"
+JAVA_OPTS="-Xms300m -Xmx300m"
 PORT=20020
 DEBUG_PORT=0
 while getopts "c:n:d:p:o:a:" opt; do
@@ -58,7 +58,7 @@ if [ "$DEBUG_PORT" = "0" ]; then
   docker run -d --name ${CONTAINER_NAME} \
    -p "${PORT}:${PORT}" \
    -e JAVA_OPTS="${JAVA_OPTS}" \
-   --memory 400m --memory-swap -1 \
+   --memory 600m --memory-swap -1 \
    --network wlmtsys ${IMAGE_NAME} \
   || exit 1
 else

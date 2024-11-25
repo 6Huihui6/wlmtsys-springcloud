@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="招新模块数据库设计及申请加入、查询功能的实现">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -322,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732460354054</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="招新模块审核、发送邮件以及首页info模块轮播图">
+      <option name="closed" value="true" />
+      <created>1732516785700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732516785700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +357,8 @@
     <MESSAGE value="构建用户模块的vo，前端user模块的api，后端user模块的service，以及相关的测试用例" />
     <MESSAGE value="获取帖子详情、获取帖子列表功能的实现" />
     <MESSAGE value="招新模块数据库设计及申请加入、查询功能的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="招新模块数据库设计及申请加入、查询功能的实现" />
+    <MESSAGE value="招新模块审核、发送邮件以及首页info模块轮播图" />
+    <option name="LAST_COMMIT_MESSAGE" value="招新模块审核、发送邮件以及首页info模块轮播图" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
