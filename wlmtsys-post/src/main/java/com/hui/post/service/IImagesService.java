@@ -25,4 +25,6 @@ public interface IImagesService extends IService<Images> {
      * 保存图片
      */
     void saveImages(List<String> image, Integer postId);
+
+//    void queryImages(List<Integer> postIds);
 }

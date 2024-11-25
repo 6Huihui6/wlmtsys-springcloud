@@ -3,6 +3,7 @@ package com.hui.model.post.vo;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hui.model.post.po.Images;
 import com.hui.model.user.vos.UserDetailVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -12,6 +13,7 @@ import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * <p>
@@ -90,5 +92,6 @@ public class PostVo implements Serializable {
 
     private UserDetailVO userDetailVO;
 
+    private List<Images> images;
 
 }

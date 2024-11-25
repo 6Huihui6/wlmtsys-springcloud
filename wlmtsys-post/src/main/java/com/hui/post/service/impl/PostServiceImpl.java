@@ -13,6 +13,7 @@ import com.hui.model.post.dto.CollectBehaviorDto;
 import com.hui.model.post.dto.LikesBehaviorDto;
 import com.hui.model.post.dto.PageDto;
 import com.hui.model.post.dto.PostDto;
+import com.hui.model.post.po.Images;
 import com.hui.model.post.po.Post;
 import com.hui.model.post.vo.PostVo;
 import com.hui.model.user.vos.UserDetailVO;
@@ -31,6 +32,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -110,13 +112,18 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
             return ResponseResult.okResult(PageDTO.empty(page));
         }
         List<PostVo> postVos = BeanUtils.copyList(records, PostVo.class);
-        List<Integer> uids = postVos.stream().map(PostVo::getUserId).collect(Collectors.toList());
-        List<UserDetailVO> userDetailVOS = userClient.queryUserByIds(uids);
-        Map<Integer, UserDetailVO> collect = userDetailVOS.stream().collect(Collectors.toMap(UserDetailVO::getId, userDetailVO -> userDetailVO));
+        Set<Integer> ids = postVos.stream().map(PostVo::getUserId).collect(Collectors.toSet());
+        List<UserDetailVO> userDetailVOS = userClient.queryUserByIds(ids);
+        Map<Integer, UserDetailVO> collect = userDetailVOS.stream().collect(Collectors.toMap(UserDetailVO::getUserId, userDetailVO -> userDetailVO));
         // 2.查询当前用户
         Long userId = UserContext.getUser();
+        // 3.查询图片
+        List<Integer> postIds = postVos.stream().map(PostVo::getPostId).toList();
+        List<Images> images = imagesService.listByIds(postIds);
+        Map<Integer, List<Images>> imageMap = images.stream().collect(Collectors.groupingBy(Images::getPostId));
         for (PostVo postVo : postVos) {
             postVo.setUserDetailVO(collect.get(postVo.getUserId()));
+            postVo.setImages(imageMap.get(postVo.getPostId()));
             // 统计点赞总数
 //            Long likedTimes = redisTemplate.opsForSet()
 //                   .size(BehaviorConstants.LIKE_BEHAVIOR + postVo.getPostId());
@@ -125,12 +132,13 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
 //            Long collectTimes = redisTemplate.opsForSet()
 //                   .size(BehaviorConstants.COLLECTION_BEHAVIOR + postVo.getPostId());
 //            postVo.setCollection(collectTimes.intValue());
-//            查询当前用户是否点赞BehaviorConstants.LIKE_BEHAVIOR + dto.getPostsId();
-            boolean isLiked = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.LIKE_BEHAVIOR + postVo.getPostId(), userId.toString()));
-            postVo.setLikedOrNot(isLiked);
-            //查询当前用户是否收藏BehaviorConstants.COLLECTION_BEHAVIOR + dto.getPostsId();
-            boolean isCollected = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.COLLECTION_BEHAVIOR + postVo.getPostId(), userId.toString()));
-            postVo.setCollectedOrNot(isCollected);
+            if( userId!= null){
+                boolean isLiked = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.LIKE_BEHAVIOR + postVo.getPostId(), userId.toString()));
+                postVo.setLikedOrNot(isLiked);
+                //查询当前用户是否收藏BehaviorConstants.COLLECTION_BEHAVIOR + dto.getPostsId();
+                boolean isCollected = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.COLLECTION_BEHAVIOR + postVo.getPostId(), userId.toString()));
+                postVo.setCollectedOrNot(isCollected);
+            }
         }
 
         return ResponseResult.okResult(PageDTO.of(page,postVos));
