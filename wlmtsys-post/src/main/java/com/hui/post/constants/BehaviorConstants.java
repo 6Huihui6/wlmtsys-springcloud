@@ -10,4 +10,5 @@ public class BehaviorConstants {
     public static final String APUSER_FOLLOW_RELATION="APUSER-FOLLOW-";
     public static final String APUSER_FANS_RELATION="APUSER-FANS-";
     public static final String FOCUS_BEHAVIOR="FOCUS-BEHAVIOR-";
+    public static final String VIEW_BEHAVIOR="VIEW_BEHAVIOR";
 }

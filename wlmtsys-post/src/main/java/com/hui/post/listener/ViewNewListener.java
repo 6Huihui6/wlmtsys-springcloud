@@ -14,15 +14,14 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
-
 import static com.hui.common.constants.MqConstants.Exchange.COMMENT_EXCHANGE;
 import static com.hui.common.constants.MqConstants.Key.COMMENT_NEW_KEY;
+import static com.hui.common.constants.MqConstants.Key.VIEW_ADD;
 
 @Component
 @Slf4j
 @RequiredArgsConstructor
-public class CommentNewListener {
+public class ViewNewListener {
 
     private final IPostService postService;
 
@@ -30,14 +29,14 @@ public class CommentNewListener {
     @RabbitListener(bindings = @QueueBinding(
             value = @Queue(name = "comment.new", durable = "true"),
             exchange = @Exchange(name = COMMENT_EXCHANGE, type = ExchangeTypes.TOPIC),
-            key = COMMENT_NEW_KEY
+            key = VIEW_ADD
     ))
     public void onMessage(String mess){
         if(StringUtils.isNotBlank(mess)){
             System.out.println(mess);
             ArticleVisitStreamMess articleVisitStreamMess = JSON.parseObject(mess, ArticleVisitStreamMess.class);
             log.info("收到新评论消息：{}", articleVisitStreamMess);
-            postService.saveCommentCount(articleVisitStreamMess);
+            postService.saveViewCount(articleVisitStreamMess);
         }
     }
 

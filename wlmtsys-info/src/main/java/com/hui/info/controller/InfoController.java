@@ -126,4 +126,5 @@ public class InfoController {
     public ResponseResult deleteCarousel(@PathVariable("id") Integer id) {
         return iImagesService.deleteCarousel(id);
     }
+
 }

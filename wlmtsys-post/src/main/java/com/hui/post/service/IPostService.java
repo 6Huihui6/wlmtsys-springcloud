@@ -55,4 +55,9 @@ public interface IPostService extends IService<Post> {
      * 获取帖子详情
      */
     ResponseResult getPostDetail(Integer postId);
+
+    /**
+     * 保存浏览数
+     */
+    void saveViewCount(ArticleVisitStreamMess articleVisitStreamMess);
 }

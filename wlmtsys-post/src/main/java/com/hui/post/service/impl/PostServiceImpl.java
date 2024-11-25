@@ -279,4 +279,21 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
         return ResponseResult.okResult(postVo);
     }
 
+    /**
+     * 保存浏览数
+     *
+     * @param articleVisitStreamMess
+     */
+    @Override
+    public void saveViewCount(ArticleVisitStreamMess articleVisitStreamMess) {
+        if (articleVisitStreamMess == null || articleVisitStreamMess.getPostId() == null) {
+            return;
+        }
+        Post post = getById(articleVisitStreamMess.getPostId());
+        if (post == null) {
+            return;
+        }
+        post.setViews(post.getViews() + articleVisitStreamMess.getView());
+        updateById(post);
+    }
 }

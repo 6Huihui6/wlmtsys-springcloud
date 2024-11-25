@@ -38,7 +38,7 @@ public interface MqConstants {
     interface Key{
         /*评论有关的RoutingKey*/
         String COMMENT_NEW_KEY = "comment.new";
-        String COMMENT_KEY_TEMPLATE = "comment.changed";
+        String VIEW_ADD = "view.add";
         String COMMENT_LIST_KEY = "comment.list.changed";
         String COMMENT_DELETE_KEY = "comment.delete";
         /*课程有关的 RoutingKey*/

@@ -54,3 +54,18 @@ create table if not exists images
     url      text null comment '链接'
 );
 
+
+create table wlmtsys_post.view_records
+(
+    id        int auto_increment
+        primary key,
+    user_id   int                                not null,
+    post_id   int                                not null,
+    view_time datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP,
+    constraint unique_user_post
+        unique (user_id, post_id)
+);
+
+
+
+
