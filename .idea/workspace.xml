@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="招新模块数据库设计及申请加入、查询功能的实现">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e/storage_v2/_src_/schema/wlmtsys.EWqHVQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e/storage_v2/_src_/schema/wlmtsys_employ.fFMfKw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/ApplicationsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/mapper/ApplicationsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/IApplicationsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/ApplicationsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/mapper/ApplicationsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/CarouselDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/InterviewInvitationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/po/Applications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/mapper/ApplicationsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/java/com/hui/auth/service/ICaptchaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/java/com/hui/auth/service/ICaptchaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/java/com/hui/auth/service/impl/CaptchaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/java/com/hui/auth/service/impl/CaptchaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/EmployController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/EmployController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/InfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/IEmployService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/IEmployService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/IImagesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/IImagesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/EmployServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/EmployServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/ImagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/ImagesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/ApplicationsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/dtos/ApplicationsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/po/Employ.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/po/Employ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/po/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/po/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/query/EmployPageQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/query/ApplicatePageQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
