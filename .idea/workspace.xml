@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="招新模块审核、发送邮件以及首页info模块轮播图">
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/ViewRecords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ViewRecordsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ViewRecordsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/IViewRecordsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/mapper/ViewRecordsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

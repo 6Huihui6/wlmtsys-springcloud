@@ -31,7 +31,7 @@ public class PostController {
 
     @ApiOperation(value = "获取帖子列表")
     @GetMapping("/list")
-    public ResponseResult list(@RequestBody PageDto pageDto) {
+    public ResponseResult list( PageDto pageDto) {
         return postService.getPostList(pageDto);
     }
 
