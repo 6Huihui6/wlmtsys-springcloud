@@ -38,7 +38,7 @@ public class ApplicationsDto implements Serializable {
 
     private LocalDateTime createdTime;
 
-    @ApiModelProperty(value = "申请状态：1为审核中，2为已通过，3为未通过")
+    @ApiModelProperty(value = "申请状态：1为审核中，2为已通过，3为未通过，4为待面试")
     private Integer status;
 
     private String resumePath;

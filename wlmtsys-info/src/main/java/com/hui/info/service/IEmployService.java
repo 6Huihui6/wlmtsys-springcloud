@@ -2,6 +2,7 @@ package com.hui.info.service;
 
 import com.hui.model.common.query.PageQuery;
 import com.hui.model.info.dtos.PageDTO;
+import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.info.po.Employ;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -47,4 +48,9 @@ public interface IEmployService extends IService<Employ> {
      * @return
      */
     PageDTO<Employ> queryEmployPage(PageQuery query);
+
+    /**
+     * 开启或关闭招聘
+     */
+    ResponseResult openOrCloseRecruiting(Integer status);
 }

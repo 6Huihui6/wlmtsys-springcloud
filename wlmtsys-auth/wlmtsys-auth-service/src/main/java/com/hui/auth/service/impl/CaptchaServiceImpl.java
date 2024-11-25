@@ -1,6 +1,7 @@
 package com.hui.auth.service.impl;
 
 import com.hui.auth.service.ICaptchaService;
+import com.hui.model.info.dtos.InterviewInvitationDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -8,7 +9,6 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -48,4 +48,5 @@ public class CaptchaServiceImpl implements ICaptchaService {
         stringRedisTemplate.delete("captcha:" + email);
         return true;
     }
+
 }

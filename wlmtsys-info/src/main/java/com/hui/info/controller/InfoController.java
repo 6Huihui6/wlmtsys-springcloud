@@ -2,8 +2,10 @@ package com.hui.info.controller;
 
 
 import com.hui.common.enums.AppHttpCodeEnum;
+import com.hui.info.service.IImagesService;
 import com.hui.info.service.IInfoService;
 import com.hui.model.common.query.PageQuery;
+import com.hui.model.info.dtos.CarouselDTO;
 import com.hui.model.info.dtos.PageDTO;
 import com.hui.model.info.dtos.ResponseResult;
 import com.hui.model.info.po.Info;
@@ -36,6 +38,8 @@ import java.util.List;
 public class InfoController {
 
     private final IInfoService infoService;
+    private final IImagesService iImagesService;
+
 
 
     @ApiOperation("admin+官网---实验室简介查询接口")
@@ -98,5 +102,28 @@ public class InfoController {
     public PageDTO<Info> queryNewsPage(PageQuery query){
         log.info("分页 获取信息接口");
         return infoService.queryEmployPage(query);
+    }
+    @ApiOperation(value = "首页---获取footer轮播图接口")
+    @GetMapping("/carousel/footer")
+    public ResponseResult getCarousel() {
+        log.info("首页---footer轮播图接口");
+        return iImagesService.getCarousel();
+    }
+    @ApiOperation(value = "首页---获取top轮播图接口")
+    @GetMapping("/carousel/top")
+    public ResponseResult getTopCarousel() {
+        log.info("首页---footer轮播图接口");
+        return iImagesService.getTopCarousel();
+    }
+    @ApiOperation(value = "首页---添加footer或top轮播图接口")
+    @PostMapping("/carousel/add")
+    public ResponseResult addCarousel(@RequestBody CarouselDTO carouselDTO) {
+        log.info("首页---添加footer轮播图接口");
+        return iImagesService.addCarousel(carouselDTO);
+    }
+    @ApiOperation(value = "首页---根据id删除footer或top轮播图接口")
+    @GetMapping("/carousel/delete/{id}")
+    public ResponseResult deleteCarousel(@PathVariable("id") Integer id) {
+        return iImagesService.deleteCarousel(id);
     }
 }

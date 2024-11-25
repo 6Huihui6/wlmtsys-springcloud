@@ -34,8 +34,13 @@ public class Images implements Serializable {
     @ApiModelProperty(value = "类型id")
     private Integer typeId;
 
+    @ApiModelProperty(value = "type图片所属的类型")
+    private String type;
+
     @ApiModelProperty(value = "链接")
     private String url;
 
+    private String username;
+    private String label;
 
 }

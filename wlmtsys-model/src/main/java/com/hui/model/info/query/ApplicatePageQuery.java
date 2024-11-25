@@ -10,9 +10,13 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(description = "分页查询条件")
-public class EmployPageQuery extends PageQueryDto {
+public class ApplicatePageQuery extends PageQueryDto {
     // 用户端查询条件
     @ApiModelProperty(value = "搜索关键字,邮箱或姓名")
     private String keyword;
+    // 后台管理查询条件
+    @ApiModelProperty(value = "申请状态")
+    private Integer status;
+
 
 }

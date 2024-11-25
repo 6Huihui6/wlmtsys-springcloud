@@ -17,35 +17,40 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author hui
- * @since 2024-11-15
+ * @since 2024-11-24
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("employ")
-@ApiModel(value="Employ对象", description="")
-public class Employ implements Serializable {
+@TableName("applications")
+@ApiModel(value="Applications对象", description="")
+public class Applications implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    @TableId(value = "application_id", type = IdType.AUTO)
+    private Integer applicationId;
+
+    private Integer userId;
+
+    private Integer updateId;
+
+    private String username;
+
+    private String email;
 
     private String title;
 
-    private String work;
+    private Integer employId;
 
-    private String requirement;
+    private LocalDateTime createdTime;
 
-    private Integer label;
-
-    private LocalDateTime createTime;
-
-    private String description;
-
-//    0为已停止招聘,1为正在招新
-    @ApiModelProperty(value = "0为已停止招聘,1为正在招新")
+    @ApiModelProperty(value = "申请状态：1为审核中，2为已通过，3为未通过")
     private Integer status;
+
+    private String resumePath;
+
+    private String others;
 
 
 }

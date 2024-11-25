@@ -2,10 +2,14 @@ package com.hui.info.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
+import com.hui.common.enums.AppHttpCodeEnum;
 import com.hui.common.utils.BeanUtils;
 import com.hui.common.utils.CollUtils;
+import com.hui.common.utils.UserContext;
 import com.hui.model.common.query.PageQuery;
 import com.hui.model.info.dtos.PageDTO;
+import com.hui.model.info.dtos.ResponseResult;
+import com.hui.model.info.po.Applications;
 import com.hui.model.info.po.Employ;
 import com.hui.info.mapper.EmployMapper;
 import com.hui.info.service.IEmployService;
@@ -99,5 +103,25 @@ public class EmployServiceImpl extends ServiceImpl<EmployMapper, Employ> impleme
             employList.add(employ);
         }
         return PageDTO.of(page, employList);
+    }
+
+    /**
+     * 开启或关闭招聘
+     *
+     * @param status
+     */
+    @Override
+    public ResponseResult openOrCloseRecruiting(Integer status) {
+        Long userId = UserContext.getUser();
+        if (userId == null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.NEED_LOGIN);
+        }
+        if (status == 1) {
+            lambdaUpdate().set(Employ::getStatus, status).update();
+        }
+        if (status == 0) {
+            lambdaUpdate().set(Employ::getStatus, status).update();
+        }
+        return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
     }
 }

@@ -39,6 +39,12 @@ wlmtsys:
     contact-url: https://wuminghui.top
     contact-email: 3103733088@qq.com
     version: v1.0
+  auth:
+    resource:
+      enable: true
+      includeLoginPaths:
+        - /applications/handleApply
+
   jdbc:
     database: wlmtsys_info
 

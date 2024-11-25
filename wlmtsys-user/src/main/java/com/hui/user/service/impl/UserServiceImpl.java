@@ -53,7 +53,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
      */
     @Override
     public LoginUserDTO queryUserDetail(LoginFormDTO loginDTO, boolean isStaff) {
-        log.info(passwordEncoder.encode(DEFAULT_PASSWORD));
         // 1.判断登录方式
         Integer type = loginDTO.getType();
         User user = null;

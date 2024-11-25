@@ -34,6 +34,12 @@ public class EmployController {
 
     private final IEmployService employService;
 
+    @ApiOperation("开启招新或关闭招新某个岗位接口----0:关闭招新，1:开启招新")
+    @GetMapping("/openOrCloseRecruiting")
+    public ResponseResult openOrCloseRecruiting(@RequestParam("status") Integer status)  {
+        return employService.openOrCloseRecruiting(status);
+    }
+
     @ApiOperation("admin---新增招聘信息接口")
     @PostMapping("/add")
     public void addEmploy( @RequestBody Employ employ) {
