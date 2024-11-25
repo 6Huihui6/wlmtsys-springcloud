@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="招新模块审核、发送邮件以及首页info模块轮播图">
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/listener/ViewNewListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/MqConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/MqConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/InfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/BehaviorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/BehaviorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/listener/CommentNewListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/listener/CommentNewListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/IPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/IPostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys_post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys_post.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/ViewRecords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ViewRecordsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ViewRecordsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/IViewRecordsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/mapper/ViewRecordsMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732516785700</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="招新模块审核、发送邮件以及首页info模块轮播图">
+      <option name="closed" value="true" />
+      <created>1732529464270</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732529464270</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
