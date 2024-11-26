@@ -47,10 +47,10 @@ public class InfoServiceImpl extends ServiceImpl<InfoMapper, Info> implements II
      * @return
      */
     @Override
-    public List<Info> getLabIntro() {
+    public ResponseResult getLabIntro() {
         List<Info> list =  list();
         log.info("实验室介绍信息：{}",list);
-        return list;
+        return ResponseResult.okResult(list);
     }
 
     /**

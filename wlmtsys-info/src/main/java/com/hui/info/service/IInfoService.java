@@ -25,7 +25,7 @@ public interface IInfoService extends IService<Info> {
      *
      * @return
      */
-    List<Info> getLabIntro();
+    ResponseResult getLabIntro();
 
     /**
      * 更新实验室介绍信息

@@ -46,8 +46,7 @@ public class InfoController {
     @GetMapping("/intro")
     public ResponseResult getLabIntro() {
         log.info("实验室简介接口");
-        List<Info> list = infoService.getLabIntro();
-        return ResponseResult.okResult(list);
+        return  infoService.getLabIntro();
     }
 
     @ApiOperation("admin---添加实验室简介接口")

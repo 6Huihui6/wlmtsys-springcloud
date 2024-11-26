@@ -70,7 +70,7 @@ public class EmployController {
         return employService.queryEmployPage(query);
     }
 
-    @ApiOperation("招聘查询接口")
+    @ApiOperation("招聘查询接口,lable为标签，1:大一，2:大二，3:大三")
     @GetMapping("/list/{lables}")
     public ResponseResult getEmployList(@PathVariable("lables") Integer lables) {
         log.info("招聘查询接口");
