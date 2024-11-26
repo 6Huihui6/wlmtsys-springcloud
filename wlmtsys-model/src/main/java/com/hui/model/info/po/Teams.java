@@ -1,5 +1,6 @@
 package com.hui.model.info.po;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -39,8 +40,10 @@ public class Teams implements Serializable {
 
     private String job;
 
+    @TableField("`desc`")
     private String desc;
 
+    @TableField("`core`")
     private Integer core;
 
     private String info;

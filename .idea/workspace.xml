@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="招新模块审核、发送邮件以及首页info模块轮播图">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/dto/LoginFormDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/dto/LoginFormDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-user/src/main/java/com/hui/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/po/Teams.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/info/po/Teams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
