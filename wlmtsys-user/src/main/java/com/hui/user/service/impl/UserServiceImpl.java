@@ -101,6 +101,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         // 3.保存用户信息
         User newUser = new User();
+        newUser.setUsername(loginFormDTO.getUsername());
         newUser.setEmail(email);
         newUser.setPassword(passwordEncoder.encode(password));
         save(newUser);

@@ -8,8 +8,10 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 
 @Data
-@ApiModel(description = "登录表单实体")
+@ApiModel(description = "登录注册表单实体")
 public class LoginFormDTO {
+    @ApiModelProperty(value = "用户名", example = "admin", required = true)
+    private  String username;
     @ApiModelProperty(value = "登录方式：1-密码登录; 2-验证码登录", example = "1", required = true)
     private Integer type;
     @ApiModelProperty(value = "验证码登录", example = "123456", required = false)

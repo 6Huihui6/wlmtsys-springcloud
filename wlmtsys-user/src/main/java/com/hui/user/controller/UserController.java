@@ -54,8 +54,8 @@ public class UserController {
         return usersService.queryUserDetail(loginDTO, isStaff);
     }
 
-//    @ApiIgnore
-    @ApiOperation(value = "用户注册")
+    @ApiIgnore
+//    @ApiOperation(value = "用户注册")
     @PostMapping("/register")
     public ResponseResult register(@Valid @RequestBody LoginFormDTO loginFormDTO){
         return usersService.register(loginFormDTO);
