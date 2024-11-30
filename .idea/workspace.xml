@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="优化注册接口">
+      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/java/com/hui/learn/LearnApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/resources/bootstrap-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/dto/LCollectBehaviorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/dto/LLikesBehaviorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/dto/LearningDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/query/LearnPageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/vo/LChannelVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/vo/LearningVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wlmtsys_learn.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/EmployController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/EmployController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/controller/InfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/IInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/IInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/InfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/java/com/hui/info/service/impl/InfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/mapper/AccountRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/mapper/ILChannelService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/mapper/OBSService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/mapper/ILChannelService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-learning/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-learning/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/BehaviorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/common/constants/BehaviorConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/mapper/ViewRecordsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/mapper/ILChannelService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys_post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys_post.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="hui" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,75 +91,117 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.SendemailApplicationTests.contextLoads.executor": "Run",
-    "JUnit.SendemailApplicationTests.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.wlmtsys-auth [clean].executor": "Run",
-    "Maven.wlmtsys-auth [compile].executor": "Run",
-    "Maven.wlmtsys-auth [install].executor": "Run",
-    "Maven.wlmtsys-model [clean].executor": "Run",
-    "Maven.wlmtsys-model [compile].executor": "Run",
-    "Maven.wlmtsys-model [install].executor": "Run",
-    "Maven.wlmtsys-post [install].executor": "Run",
-    "Maven.wlmtsys-user [clean].executor": "Run",
-    "Maven.wlmtsys-user [install].executor": "Run",
-    "Maven.wlmtsysplus [clean].executor": "Run",
-    "Maven.wlmtsysplus [compile].executor": "Run",
-    "Maven.wlmtsysplus [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.AuthApplication.executor": "Debug",
-    "Spring Boot.GatewayApplication.executor": "Debug",
-    "Spring Boot.InfoApplication.executor": "Debug",
-    "Spring Boot.PostApplication.executor": "Debug",
-    "Spring Boot.UserApplication.executor": "Debug",
-    "git-widget-placeholder": "hui",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/project/wlmtsysplus/wlmtsys-common/src/main/java/com/hui/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "全局库",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.36551723",
-    "run.configurations.included.in.services": "true",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.SendemailApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SendemailApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-auth [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-auth [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-auth [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-model [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-model [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-model [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-post [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-user [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsys-user [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsysplus [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsysplus [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.wlmtsysplus [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.InfoApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PostApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hui&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/project/wlmtsysplus/wlmtsys-common/src/main/java/com/hui/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.36551723&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
+  &amp;quot;keyToString&amp;quot;: {
+    &amp;quot;JUnit.SendemailApplicationTests.contextLoads.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;JUnit.SendemailApplicationTests.executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-auth [clean].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-auth [compile].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-auth [install].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-model [clean].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-model [compile].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-model [install].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-post [install].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-user [clean].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsys-user [install].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsysplus [clean].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsysplus [compile].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;Maven.wlmtsysplus [install].executor&amp;quot;: &amp;quot;Run&amp;quot;,
+    &amp;quot;RequestMappingsPanelOrder0&amp;quot;: &amp;quot;0&amp;quot;,
+    &amp;quot;RequestMappingsPanelOrder1&amp;quot;: &amp;quot;1&amp;quot;,
+    &amp;quot;RequestMappingsPanelWidth0&amp;quot;: &amp;quot;75&amp;quot;,
+    &amp;quot;RequestMappingsPanelWidth1&amp;quot;: &amp;quot;75&amp;quot;,
+    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;Spring Boot.AuthApplication.executor&amp;quot;: &amp;quot;Debug&amp;quot;,
+    &amp;quot;Spring Boot.GatewayApplication.executor&amp;quot;: &amp;quot;Debug&amp;quot;,
+    &amp;quot;Spring Boot.InfoApplication.executor&amp;quot;: &amp;quot;Debug&amp;quot;,
+    &amp;quot;Spring Boot.PostApplication.executor&amp;quot;: &amp;quot;Debug&amp;quot;,
+    &amp;quot;Spring Boot.UserApplication.executor&amp;quot;: &amp;quot;Debug&amp;quot;,
+    &amp;quot;git-widget-placeholder&amp;quot;: &amp;quot;main&amp;quot;,
+    &amp;quot;kotlin-language-version-configured&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;last_opened_file_path&amp;quot;: &amp;quot;E:/project/wlmtsysplus/wlmtsys-common/src/main/java/com/hui/common&amp;quot;,
+    &amp;quot;node.js.detected.package.eslint&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;node.js.detected.package.tslint&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;node.js.selected.package.eslint&amp;quot;: &amp;quot;(autodetect)&amp;quot;,
+    &amp;quot;node.js.selected.package.tslint&amp;quot;: &amp;quot;(autodetect)&amp;quot;,
+    &amp;quot;nodejs_package_manager_path&amp;quot;: &amp;quot;npm&amp;quot;,
+    &amp;quot;project.structure.last.edited&amp;quot;: &amp;quot;全局库&amp;quot;,
+    &amp;quot;project.structure.proportion&amp;quot;: &amp;quot;0.15&amp;quot;,
+    &amp;quot;project.structure.side.proportion&amp;quot;: &amp;quot;0.36551723&amp;quot;,
+    &amp;quot;run.configurations.included.in.services&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;settings.build.tools.auto.reload&amp;quot;: &amp;quot;ALL&amp;quot;,
+    &amp;quot;settings.editor.selected.configurable&amp;quot;: &amp;quot;MavenSettings&amp;quot;,
+    &amp;quot;vue.rearranger.settings.migration&amp;quot;: &amp;quot;true&amp;quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\wlmtsysplus\wlmtsys-learning\src\main\resources" />
+      <recent name="E:\project\wlmtsysplus" />
       <recent name="E:\project\wlmtsysplus\wlmtsys-common\src\main\java\com\hui\common" />
       <recent name="E:\project\wlmtsysplus\wlmtsys-post\src\main\java\com\hui\post" />
       <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model\post\po" />
-      <recent name="E:\project\wlmtsysplus\wlmtsys-model\src\main\java\com\hui\model" />
-      <recent name="E:\project\wlmtsysplus\wlmtsys-post\src\main\java\com\hui\post\controller" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hui.auth" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hui.post.listener" />
-      <recent name="com.hui.model.post.dto" />
-      <recent name="com.hui.model.info.dtos" />
-      <recent name="com.hui.model.info.query" />
-      <recent name="com.hui.model.info.vo" />
+      <recent name="com.hui.learn" />
+      <recent name="com.hui.model.learn.dto" />
+      <recent name="com.hui.model.learn.vo" />
+      <recent name="com.hui.model.learn.query" />
+      <recent name="com.hui.model.learn.po.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -151,7 +214,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.LearnApplication">
+    <configuration name="wlmtsys.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/../../OneDrive/桌面/wlmtsys.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="488f8d68-e9be-421a-a0f4-efa047e7488e" />
+      <method v="2" />
+    </configuration>
     <configuration name="SendemailApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wlmtsys-auth-service" />
       <extension name="coverage">
@@ -207,6 +276,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LearnApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="wlmtsys-learning" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hui.learn.LearnApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hui.learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="local" />
       <module name="wlmtsys-post" />
@@ -236,15 +319,17 @@
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.InfoApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.LearnApplication" />
       <item itemvalue="Spring Boot.PostApplication" />
+      <item itemvalue="数据库脚本.wlmtsys.sql" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.LearnApplication" />
         <item itemvalue="Spring Boot.PostApplication" />
         <item itemvalue="JUnit.SendemailApplicationTests.contextLoads" />
         <item itemvalue="JUnit.SendemailApplicationTests" />
         <item itemvalue="Spring Boot.PostApplication" />
-        <item itemvalue="JUnit.SendemailApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -280,6 +365,12 @@
       <workItem from="1732494089784" duration="12358000" />
       <workItem from="1732602460422" duration="71000" />
       <workItem from="1732607884859" duration="1767000" />
+      <workItem from="1732706111206" duration="1055000" />
+      <workItem from="1732797129105" duration="3788000" />
+      <workItem from="1732883360713" duration="5430000" />
+      <workItem from="1732936641934" duration="5638000" />
+      <workItem from="1732942305607" duration="12750000" />
+      <workItem from="1732959309656" duration="4348000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />

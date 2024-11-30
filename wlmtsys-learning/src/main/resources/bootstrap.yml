@@ -1,12 +1,12 @@
 server:
-  port: 20004 #端口
+  port: 20006 #端口
   tomcat:
     uri-encoding: UTF-8   #服务编码
 spring:
   profiles:
     active: dev
   application:
-    name: post-service
+    name: learn-service
   cloud:
     nacos:
       config:
@@ -32,16 +32,16 @@ wlmtsys:
   auth:
     resource:
       enable: true
-      includeLoginPaths:
-        - /post/addOrEdit
+#      includeLoginPaths:
+#        - /learning/*
       excludeLoginPaths:
-        - /channel/*
+        - /channel/list
 
   swagger:
     enable: true
     enableResponseWrap: true
-    package-path: com.hui.post.controller
-    title: 职位你来 - 用户中心接口文档
+    package-path: com.hui.learn.controller
+    title: 职位你来 - 学习资料中心接口文档
     description: 该服务用户管理、用户信息管理
     contact-name: 职位你来·研究院
     contact-url: https://wlmtsys.com
@@ -51,7 +51,7 @@ wlmtsys:
 
 
   jdbc:
-    database: wlmtsys_post
+    database: wlmtsys_learn
 
 logging:
   level:

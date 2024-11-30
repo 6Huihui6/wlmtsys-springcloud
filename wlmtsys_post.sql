@@ -66,6 +66,15 @@ create table wlmtsys_post.view_records
         unique (user_id, post_id)
 );
 
+create table wlmtsys_post.channel
+(
+    id        int auto_increment
+        primary key,
+    name      varchar(255) null,
+    parent_id int          null
+);
+
+
 
 
 

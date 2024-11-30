@@ -17,9 +17,8 @@ import org.springframework.stereotype.Service;
 import java.time.Instant;
 
 import static com.hui.common.constants.MqConstants.Exchange.COMMENT_EXCHANGE;
-import static com.hui.common.constants.MqConstants.Key.COMMENT_NEW_KEY;
 import static com.hui.common.constants.MqConstants.Key.VIEW_ADD;
-import static com.hui.post.constants.BehaviorConstants.VIEW_BEHAVIOR;
+import static com.hui.model.common.constants.BehaviorConstants.VIEW_BEHAVIOR;
 
 /**
  * <p>

@@ -40,9 +40,9 @@ spring:
           filters:
             - PreserveHostHeader
         - id: ds
-          uri: lb://data-service
+          uri: lb://learn-service
           predicates:
-            - Path=/ds/**
+            - Path=/ls/**
         - id: sms
           uri: lb://message-service
           predicates:
