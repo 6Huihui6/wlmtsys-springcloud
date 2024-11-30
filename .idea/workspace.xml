@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="优化注册接口">
-      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/java/com/hui/learn/LearnApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/resources/bootstrap-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/dto/LCollectBehaviorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/dto/LLikesBehaviorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/dto/LearningDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/query/LearnPageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/vo/LChannelVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/learn/vo/LearningVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys_learn.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/mapper/AccountRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-auth/wlmtsys-auth-service/src/main/resources/mapper/ILChannelService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/mapper/OBSService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-info/src/main/resources/mapper/ILChannelService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-learning/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-learning/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/BehaviorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/common/constants/BehaviorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/mapper/ViewRecordsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/resources/mapper/ILChannelService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys_post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys_post.sql" afterDir="false" />
-    </list>
+    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="学习模块的增删改查接口" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -370,7 +342,7 @@
       <workItem from="1732883360713" duration="5430000" />
       <workItem from="1732936641934" duration="5638000" />
       <workItem from="1732942305607" duration="12750000" />
-      <workItem from="1732959309656" duration="4348000" />
+      <workItem from="1732959309656" duration="4753000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />
@@ -452,7 +424,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732612403774</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="学习模块的增删改查接口">
+      <option name="closed" value="true" />
+      <created>1732964204812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732964204812</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +461,8 @@
     <MESSAGE value="招新模块审核、发送邮件以及首页info模块轮播图" />
     <MESSAGE value="紧急改bug" />
     <MESSAGE value="优化注册接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化注册接口" />
+    <MESSAGE value="学习模块的增删改查接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习模块的增删改查接口" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
