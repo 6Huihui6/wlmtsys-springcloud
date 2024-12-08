@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="学习模块的增删改查接口" />
+    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="学习模块的增删改查接口">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-learning/src/main/java/com/hui/learn/service/impl/LearningServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-learning/src/main/java/com/hui/learn/service/impl/LearningServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/vos/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/user/vos/UserVo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hui" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -301,7 +309,7 @@
         <item itemvalue="Spring Boot.PostApplication" />
         <item itemvalue="JUnit.SendemailApplicationTests.contextLoads" />
         <item itemvalue="JUnit.SendemailApplicationTests" />
-        <item itemvalue="Spring Boot.PostApplication" />
+        <item itemvalue="Spring Boot.LearnApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -343,6 +351,14 @@
       <workItem from="1732936641934" duration="5638000" />
       <workItem from="1732942305607" duration="12750000" />
       <workItem from="1732959309656" duration="4753000" />
+      <workItem from="1733039193284" duration="84000" />
+      <workItem from="1733103173012" duration="73000" />
+      <workItem from="1733137414488" duration="239000" />
+      <workItem from="1733222585035" duration="553000" />
+      <workItem from="1733445386704" duration="2318000" />
+      <workItem from="1733632223406" duration="2078000" />
+      <workItem from="1733641977481" duration="4532000" />
+      <workItem from="1733647329617" duration="2970000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />

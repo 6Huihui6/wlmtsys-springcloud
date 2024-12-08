@@ -1,978 +1,119 @@
-16:57:01.848-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.hui.info.InfoApplication             : The following 1 profile is active: "local"
-16:57:03.735-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-16:57:03.740-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-16:57:03.796-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 MongoDB repository interfaces.
-16:57:03.825-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-16:57:03.829-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-16:57:03.857-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-16:57:04.450-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9649ef72-68a6-3ff1-9232-687be02cc2b7
-16:57:05.044-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-16:57:05.051-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-16:57:05.053-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$600/0x000002d8cd542a00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-16:57:05.057-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-16:57:05.103-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-16:57:05.108-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-16:57:05.428-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20002 (http)
-16:57:05.429-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-16:57:05.429-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-16:57:05.429-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-16:57:05.434-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-16:57:05.447-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-16:57:05.447-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-16:57:05.698-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-16:57:05.699-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3820 ms
-16:57:06.092-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
-16:57:07.983-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-16:57:10.008-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6e8f3b76]}, clusterSettings={hosts=[121.37.242.119:17017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-16:57:10.040-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:68}] to 121.37.242.119:17017
-16:57:10.040-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:67}] to 121.37.242.119:17017
-16:57:10.042-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [7.242.119:17017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=121.37.242.119:17017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=57549000}
-16:57:12.987-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-16:57:13.656-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-16:57:13.656-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-16:57:13.657-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-16:57:13.764-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20002 (http) with context path ''
-16:57:13.772-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=20002, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@info-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-16:57:13.773-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 registering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-16:57:13.793-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP info-service localhost:20002 register finished
-16:57:14.758-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-16:57:14.765-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-16:57:15.157-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-16:57:16.358-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.hui.info.InfoApplication             : Started InfoApplication in 18.422 seconds (JVM running for 19.258)
-16:57:16.370-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service-local.yaml+DEFAULT_GROUP
-16:57:16.372-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service-local.yaml, group=DEFAULT_GROUP, cnt=1
-16:57:16.374-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service-local.yaml, group=DEFAULT_GROUP
-16:57:16.375-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service+DEFAULT_GROUP
-16:57:16.375-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service, group=DEFAULT_GROUP, cnt=1
-16:57:16.378-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service, group=DEFAULT_GROUP
-16:57:16.378-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service.yaml+DEFAULT_GROUP
-16:57:16.378-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service.yaml, group=DEFAULT_GROUP, cnt=1
-16:57:16.378-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service.yaml, group=DEFAULT_GROUP
-16:57:16.382-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [           main] com.hui.info.InfoApplication             : --/
+16:11:37.896-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.hui.info.InfoApplication             : The following 1 profile is active: "local"
+16:11:38.790-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+16:11:38.792-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+16:11:38.815-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 MongoDB repository interfaces.
+16:11:38.825-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+16:11:38.827-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:11:38.837-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+16:11:39.396-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9649ef72-68a6-3ff1-9232-687be02cc2b7
+16:11:39.933-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:11:39.940-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:11:39.941-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$600/0x000001a681542570] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:11:39.944-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:11:39.995-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:11:39.999-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:11:40.376-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20002 (http)
+16:11:40.378-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+16:11:40.378-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:11:40.379-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:11:40.383-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:11:40.396-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:11:40.396-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+16:11:40.667-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:11:40.667-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2745 ms
+16:11:41.051-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+16:11:42.636-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+16:11:43.934-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@79aa675b]}, clusterSettings={hosts=[121.37.242.119:17017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+16:11:43.971-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:30}] to 121.37.242.119:17017
+16:11:43.971-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:31}] to 121.37.242.119:17017
+16:11:43.971-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [7.242.119:17017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=121.37.242.119:17017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44018400}
+16:11:46.487-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:11:46.885-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+16:11:46.886-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+16:11:46.886-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+16:11:46.956-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20002 (http) with context path ''
+16:11:46.960-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=20002, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@info-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+16:11:46.961-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 registering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+16:11:46.969-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP info-service localhost:20002 register finished
+16:11:47.947-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+16:11:47.951-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+16:11:48.211-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:11:48.692-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.hui.info.InfoApplication             : Started InfoApplication in 14.613 seconds (JVM running for 16.759)
+16:11:48.697-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service-local.yaml+DEFAULT_GROUP
+16:11:48.697-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service-local.yaml, group=DEFAULT_GROUP
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service+DEFAULT_GROUP
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service, group=DEFAULT_GROUP, cnt=1
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service, group=DEFAULT_GROUP
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service.yaml+DEFAULT_GROUP
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service.yaml, group=DEFAULT_GROUP, cnt=1
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service.yaml, group=DEFAULT_GROUP
+16:11:48.698-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [           main] com.hui.info.InfoApplication             : --/
 ---------------------------------------------------------------------------------------
 	Application 'info-service' is running! Access URLs:
 	Local: 		http://localhost:20002
 	External: 	http://192.168.1.119:20002
 	Profile(s): 	[local]
 ---------------------------------------------------------------------------------------
-16:57:31.021-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [io-20002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-16:57:31.022-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-16:57:31.023-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-16:57:31.192-[DESKTOP-44TL0F9][6e12884d3e1441bd8e83db14f6c693ba]--ERROR 29252 --- [io-20002-exec-1] c.h.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /teams/list/ -> 
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "list"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at com.hui.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-Caused by: java.lang.NumberFormatException: For input string: "list"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
-	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[na:na]
-	at java.base/java.lang.Integer.valueOf(Integer.java:999) ~[na:na]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211) ~[spring-core-5.3.22.jar:5.3.22]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.22.jar:5.3.22]
-	... 50 common frames omitted
-16:59:16.087-[DESKTOP-44TL0F9][861dbcdce286472fb869f253a95b91f3]-- INFO 29252 --- [io-20002-exec-2] com.hui.info.controller.TeamsController  : 团队查询接口
-16:59:16.148-[DESKTOP-44TL0F9][861dbcdce286472fb869f253a95b91f3]-- WARN 29252 --- [io-20002-exec-2] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @fd07cbb
-16:59:16.164-[DESKTOP-44TL0F9][861dbcdce286472fb869f253a95b91f3]-- INFO 29252 --- [io-20002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-16:59:16.641-[DESKTOP-44TL0F9][861dbcdce286472fb869f253a95b91f3]-- INFO 29252 --- [io-20002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-16:59:16.647-[DESKTOP-44TL0F9][861dbcdce286472fb869f253a95b91f3]--DEBUG 29252 --- [io-20002-exec-2] c.h.info.mapper.TeamsMapper.selectList   : ==>  Preparing: SELECT id,depart,name,image,job,desc,core,info,create_time FROM teams WHERE (depart = ?) ORDER BY core DESC
-16:59:16.675-[DESKTOP-44TL0F9][861dbcdce286472fb869f253a95b91f3]--DEBUG 29252 --- [io-20002-exec-2] c.h.info.mapper.TeamsMapper.selectList   : ==> Parameters: 1(Integer)
-16:59:16.758-[DESKTOP-44TL0F9][861dbcdce286472fb869f253a95b91f3]--ERROR 29252 --- [io-20002-exec-2] c.h.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /teams/list/1 -> 
-org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-### The error may exist in com/hui/info/mapper/TeamsMapper.java (best guess)
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: SELECT  id,depart,name,image,job,desc,core,info,create_time  FROM teams     WHERE (depart = ?) ORDER BY core DESC
-### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.22.jar:5.3.22]
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.22.jar:5.3.22]
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at jdk.proxy2/jdk.proxy2.$Proxy136.selectList(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at jdk.proxy2/jdk.proxy2.$Proxy150.selectList(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.list(ChainQuery.java:39) ~[mybatis-plus-extension-3.5.2.jar:3.5.2]
-	at com.hui.info.service.impl.TeamsServiceImpl.getTeamsList(TeamsServiceImpl.java:49) ~[classes/:na]
-	at com.hui.info.service.impl.TeamsServiceImpl$$FastClassBySpringCGLIB$$91f6a093.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
-	at com.hui.info.service.impl.TeamsServiceImpl$$EnhancerBySpringCGLIB$$ddfb01b3.getTeamsList(<generated>) ~[classes/:na]
-	at com.hui.info.controller.TeamsController.geTeamsList(TeamsController.java:46) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at com.hui.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy3/jdk.proxy3.$Proxy204.execute(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.10.jar:3.5.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy2/jdk.proxy2.$Proxy202.query(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
-	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy2/jdk.proxy2.$Proxy201.query(Unknown Source) ~[na:na]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	... 69 common frames omitted
-16:59:36.352-[DESKTOP-44TL0F9][c86fc7c4c7b14574a07986d1461e78ae]--ERROR 29252 --- [io-20002-exec-4] c.h.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /teams/list/ -> 
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "list"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at com.hui.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-Caused by: java.lang.NumberFormatException: For input string: "list"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
-	at java.base/java.lang.Integer.parseInt(Integer.java:668) ~[na:na]
-	at java.base/java.lang.Integer.valueOf(Integer.java:999) ~[na:na]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211) ~[spring-core-5.3.22.jar:5.3.22]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.22.jar:5.3.22]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.22.jar:5.3.22]
-	... 50 common frames omitted
-17:02:38.465-[DESKTOP-44TL0F9][66c2d16ac374492abf5b9c92638d785e]-- INFO 29252 --- [io-20002-exec-6] com.hui.info.controller.TeamsController  : 团队查询接口
-17:02:38.491-[DESKTOP-44TL0F9][66c2d16ac374492abf5b9c92638d785e]--DEBUG 29252 --- [io-20002-exec-6] c.h.info.mapper.TeamsMapper.selectList   : ==>  Preparing: SELECT id,depart,name,image,job,desc,core,info,create_time FROM teams WHERE (depart = ?) ORDER BY core DESC
-17:02:38.492-[DESKTOP-44TL0F9][66c2d16ac374492abf5b9c92638d785e]--DEBUG 29252 --- [io-20002-exec-6] c.h.info.mapper.TeamsMapper.selectList   : ==> Parameters: 1(Integer)
-17:02:38.523-[DESKTOP-44TL0F9][66c2d16ac374492abf5b9c92638d785e]--ERROR 29252 --- [io-20002-exec-6] c.h.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /teams/list/1 -> 
-org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-### The error may exist in com/hui/info/mapper/TeamsMapper.java (best guess)
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: SELECT  id,depart,name,image,job,desc,core,info,create_time  FROM teams     WHERE (depart = ?) ORDER BY core DESC
-### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.22.jar:5.3.22]
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.22.jar:5.3.22]
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at jdk.proxy2/jdk.proxy2.$Proxy136.selectList(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at jdk.proxy2/jdk.proxy2.$Proxy150.selectList(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.list(ChainQuery.java:39) ~[mybatis-plus-extension-3.5.2.jar:3.5.2]
-	at com.hui.info.service.impl.TeamsServiceImpl.getTeamsList(TeamsServiceImpl.java:49) ~[classes/:na]
-	at com.hui.info.service.impl.TeamsServiceImpl$$FastClassBySpringCGLIB$$91f6a093.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
-	at com.hui.info.service.impl.TeamsServiceImpl$$EnhancerBySpringCGLIB$$ddfb01b3.getTeamsList(<generated>) ~[classes/:na]
-	at com.hui.info.controller.TeamsController.geTeamsList(TeamsController.java:46) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at com.hui.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,core,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY core DESC' at line 1
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy3/jdk.proxy3.$Proxy204.execute(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.10.jar:3.5.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy2/jdk.proxy2.$Proxy202.query(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
-	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy2/jdk.proxy2.$Proxy201.query(Unknown Source) ~[na:na]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	... 69 common frames omitted
-17:08:01.830-[DESKTOP-44TL0F9][sys]-- WARN 29252 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-17:08:01.830-[DESKTOP-44TL0F9][sys]-- WARN 29252 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-17:08:01.831-[DESKTOP-44TL0F9][sys]-- WARN 29252 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-17:08:01.833-[DESKTOP-44TL0F9][sys]-- WARN 29252 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-17:08:01.927-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-17:08:01.928-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@info-service:localhost:20002 from beat map.
-17:08:01.928-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 deregistering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-17:08:01.939-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-17:08:01.939-[DESKTOP-44TL0F9][sys]-- INFO 29252 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-17:08:14.622-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.hui.info.InfoApplication             : The following 1 profile is active: "local"
-17:08:16.194-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:08:16.197-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-17:08:16.247-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 0 MongoDB repository interfaces.
-17:08:16.265-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:08:16.266-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-17:08:16.288-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-17:08:17.086-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9649ef72-68a6-3ff1-9232-687be02cc2b7
-17:08:17.961-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:08:17.969-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:08:17.972-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$600/0x00000269d55437e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:08:17.976-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:08:18.044-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:08:18.051-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:08:18.668-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20002 (http)
-17:08:18.670-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-17:08:18.670-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-17:08:18.670-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-17:08:18.680-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-17:08:18.701-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-17:08:18.701-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-17:08:19.129-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-17:08:19.129-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4487 ms
-17:08:19.675-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
-17:08:27.336-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-17:08:29.798-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7a0f1f9d]}, clusterSettings={hosts=[121.37.242.119:17017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-17:08:30.191-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:69}] to 121.37.242.119:17017
-17:08:30.191-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [7.242.119:17017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=121.37.242.119:17017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=278981800}
-17:08:30.191-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:70}] to 121.37.242.119:17017
-17:08:37.323-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17:08:38.074-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:08:38.076-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-17:08:38.076-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:08:38.200-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20002 (http) with context path ''
-17:08:38.209-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=20002, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@info-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-17:08:38.212-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 registering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-17:08:38.230-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP info-service localhost:20002 register finished
-17:08:39.175-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:08:39.181-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:08:39.723-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17:08:40.571-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.hui.info.InfoApplication             : Started InfoApplication in 31.564 seconds (JVM running for 34.625)
-17:08:40.577-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service-local.yaml+DEFAULT_GROUP
-17:08:40.578-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service-local.yaml, group=DEFAULT_GROUP, cnt=1
-17:08:40.579-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service-local.yaml, group=DEFAULT_GROUP
-17:08:40.579-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service+DEFAULT_GROUP
-17:08:40.579-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service, group=DEFAULT_GROUP, cnt=1
-17:08:40.579-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service, group=DEFAULT_GROUP
-17:08:40.580-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service.yaml+DEFAULT_GROUP
-17:08:40.580-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service.yaml, group=DEFAULT_GROUP, cnt=1
-17:08:40.580-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service.yaml, group=DEFAULT_GROUP
-17:08:40.581-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [           main] com.hui.info.InfoApplication             : --/
----------------------------------------------------------------------------------------
-	Application 'info-service' is running! Access URLs:
-	Local: 		http://localhost:20002
-	External: 	http://192.168.1.119:20002
-	Profile(s): 	[local]
----------------------------------------------------------------------------------------
-17:08:43.389-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [io-20002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:08:43.389-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-17:08:43.392-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-17:08:43.673-[DESKTOP-44TL0F9][9d70924f1f604d648d8f0fba0b434ce4]-- INFO 31860 --- [io-20002-exec-1] com.hui.info.controller.TeamsController  : 团队查询接口
-17:08:43.769-[DESKTOP-44TL0F9][9d70924f1f604d648d8f0fba0b434ce4]-- WARN 31860 --- [io-20002-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @fd07cbb
-17:08:43.795-[DESKTOP-44TL0F9][9d70924f1f604d648d8f0fba0b434ce4]-- INFO 31860 --- [io-20002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-17:08:44.222-[DESKTOP-44TL0F9][9d70924f1f604d648d8f0fba0b434ce4]-- INFO 31860 --- [io-20002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-17:08:44.236-[DESKTOP-44TL0F9][9d70924f1f604d648d8f0fba0b434ce4]--DEBUG 31860 --- [io-20002-exec-1] c.h.info.mapper.TeamsMapper.selectList   : ==>  Preparing: SELECT id,depart,name,image,job,desc,`core`,info,create_time FROM teams WHERE (depart = ?) ORDER BY `core` DESC
-17:08:44.274-[DESKTOP-44TL0F9][9d70924f1f604d648d8f0fba0b434ce4]--DEBUG 31860 --- [io-20002-exec-1] c.h.info.mapper.TeamsMapper.selectList   : ==> Parameters: 1(Integer)
-17:08:44.380-[DESKTOP-44TL0F9][9d70924f1f604d648d8f0fba0b434ce4]--ERROR 31860 --- [io-20002-exec-1] c.h.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /teams/list/1 -> 
-org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,`core`,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY `core` ' at line 1
-### The error may exist in com/hui/info/mapper/TeamsMapper.java (best guess)
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: SELECT  id,depart,name,image,job,desc,`core`,info,create_time  FROM teams     WHERE (depart = ?) ORDER BY `core` DESC
-### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,`core`,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY `core` ' at line 1
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,`core`,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY `core` ' at line 1
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.22.jar:5.3.22]
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.22.jar:5.3.22]
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at jdk.proxy2/jdk.proxy2.$Proxy137.selectList(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.2.jar:3.5.2]
-	at jdk.proxy2/jdk.proxy2.$Proxy151.selectList(Unknown Source) ~[na:na]
-	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.list(ChainQuery.java:39) ~[mybatis-plus-extension-3.5.2.jar:3.5.2]
-	at com.hui.info.service.impl.TeamsServiceImpl.getTeamsList(TeamsServiceImpl.java:49) ~[classes/:na]
-	at com.hui.info.service.impl.TeamsServiceImpl$$FastClassBySpringCGLIB$$91f6a093.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
-	at com.hui.info.service.impl.TeamsServiceImpl$$EnhancerBySpringCGLIB$$dc3c54be.getTeamsList(<generated>) ~[classes/:na]
-	at com.hui.info.controller.TeamsController.geTeamsList(TeamsController.java:46) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at com.hui.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:27) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
-	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc,`core`,info,create_time  FROM teams 
- 
- WHERE (depart = 1) ORDER BY `core` ' at line 1
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.23.jar:8.0.23]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy3/jdk.proxy3.$Proxy204.execute(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.10.jar:3.5.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy2/jdk.proxy2.$Proxy202.query(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
-	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
-	at jdk.proxy2/jdk.proxy2.$Proxy201.query(Unknown Source) ~[na:na]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
-	... 69 common frames omitted
-17:09:32.659-[DESKTOP-44TL0F9][sys]-- WARN 31860 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-17:09:32.659-[DESKTOP-44TL0F9][sys]-- WARN 31860 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-17:09:32.660-[DESKTOP-44TL0F9][sys]-- WARN 31860 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-17:09:32.662-[DESKTOP-44TL0F9][sys]-- WARN 31860 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-17:09:32.720-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-17:09:32.721-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@info-service:localhost:20002 from beat map.
-17:09:32.721-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 deregistering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-17:09:32.733-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-17:09:32.734-[DESKTOP-44TL0F9][sys]-- INFO 31860 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-17:09:50.252-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.hui.info.InfoApplication             : The following 1 profile is active: "local"
-17:09:51.304-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:09:51.307-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-17:09:51.344-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 MongoDB repository interfaces.
-17:09:51.355-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:09:51.357-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-17:09:51.367-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-17:09:51.721-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9649ef72-68a6-3ff1-9232-687be02cc2b7
-17:09:52.109-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:09:52.113-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:09:52.114-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$600/0x000001c98153b5e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:09:52.116-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:09:52.147-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:09:52.149-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:09:52.427-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20002 (http)
-17:09:52.429-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-17:09:52.429-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-17:09:52.429-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-17:09:52.434-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-17:09:52.444-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-17:09:52.444-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-17:09:52.638-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-17:09:52.638-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2364 ms
-17:09:52.912-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
-17:09:54.357-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-17:09:55.382-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@75708130]}, clusterSettings={hosts=[121.37.242.119:17017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-17:09:55.412-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:72}] to 121.37.242.119:17017
-17:09:55.412-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:71}] to 121.37.242.119:17017
-17:09:55.412-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [7.242.119:17017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=121.37.242.119:17017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33990100}
-17:09:58.000-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17:09:58.638-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:09:58.639-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-17:09:58.641-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:09:58.755-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20002 (http) with context path ''
-17:09:58.763-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=20002, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@info-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-17:09:58.764-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 registering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-17:09:58.776-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP info-service localhost:20002 register finished
-17:09:59.757-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:09:59.766-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:10:00.256-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17:10:01.095-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.hui.info.InfoApplication             : Started InfoApplication in 14.697 seconds (JVM running for 15.44)
-17:10:01.101-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service-local.yaml+DEFAULT_GROUP
-17:10:01.102-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service-local.yaml, group=DEFAULT_GROUP, cnt=1
-17:10:01.103-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service-local.yaml, group=DEFAULT_GROUP
-17:10:01.103-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service+DEFAULT_GROUP
-17:10:01.103-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service, group=DEFAULT_GROUP, cnt=1
-17:10:01.103-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service, group=DEFAULT_GROUP
-17:10:01.103-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service.yaml+DEFAULT_GROUP
-17:10:01.104-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service.yaml, group=DEFAULT_GROUP, cnt=1
-17:10:01.104-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service.yaml, group=DEFAULT_GROUP
-17:10:01.106-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [           main] com.hui.info.InfoApplication             : --/
----------------------------------------------------------------------------------------
-	Application 'info-service' is running! Access URLs:
-	Local: 		http://localhost:20002
-	External: 	http://192.168.1.119:20002
-	Profile(s): 	[local]
----------------------------------------------------------------------------------------
-17:10:10.391-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [io-20002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:10:10.392-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-17:10:10.394-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-17:10:10.645-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]-- INFO 10784 --- [io-20002-exec-1] com.hui.info.controller.NewsController   : 分页查询获取新闻详情接口:PageQuery(pageNo=1, pageSize=5, isAsc=true, sortBy=id, content1=, content2=, address=, requirement=, title=, label=null, beginTime=null, endTime=null, content=, desc=, depart=null, name=)
-17:10:10.770-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]-- WARN 10784 --- [io-20002-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @fd07cbb
-17:10:10.866-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]-- INFO 10784 --- [io-20002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-17:10:11.237-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]-- INFO 10784 --- [io-20002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-17:10:11.253-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]--DEBUG 10784 --- [io-20002-exec-1] c.h.i.m.NewsMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) AS total FROM news WHERE (content LIKE ?)
-17:10:11.291-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]--DEBUG 10784 --- [io-20002-exec-1] c.h.i.m.NewsMapper.selectPage_mpCount    : ==> Parameters: %%(String)
-17:10:11.339-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]--DEBUG 10784 --- [io-20002-exec-1] c.h.i.m.NewsMapper.selectPage_mpCount    : <==      Total: 1
-17:10:11.360-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]--DEBUG 10784 --- [io-20002-exec-1] c.hui.info.mapper.NewsMapper.selectPage  : ==>  Preparing: SELECT id, title, date, author, content, image, url, label FROM news WHERE (content LIKE ?) ORDER BY id ASC, date DESC LIMIT ?
-17:10:11.361-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]--DEBUG 10784 --- [io-20002-exec-1] c.hui.info.mapper.NewsMapper.selectPage  : ==> Parameters: %%(String), 5(Long)
-17:10:11.381-[DESKTOP-44TL0F9][e4c6a539db424c659f61f402eacf2d7a]--DEBUG 10784 --- [io-20002-exec-1] c.hui.info.mapper.NewsMapper.selectPage  : <==      Total: 5
-17:12:05.870-[DESKTOP-44TL0F9][3b26b39458b64705ae3869a485934bd2]-- INFO 10784 --- [io-20002-exec-8] com.hui.info.controller.NewsController   : 新闻查询接口
-17:12:05.890-[DESKTOP-44TL0F9][3b26b39458b64705ae3869a485934bd2]--DEBUG 10784 --- [io-20002-exec-8] c.hui.info.mapper.NewsMapper.selectList  : ==>  Preparing: SELECT id,title,date,author,content,image,url,label FROM news WHERE (label = ?) ORDER BY date DESC
-17:12:05.891-[DESKTOP-44TL0F9][3b26b39458b64705ae3869a485934bd2]--DEBUG 10784 --- [io-20002-exec-8] c.hui.info.mapper.NewsMapper.selectList  : ==> Parameters: 1(Integer)
-17:12:05.901-[DESKTOP-44TL0F9][3b26b39458b64705ae3869a485934bd2]--DEBUG 10784 --- [io-20002-exec-8] c.hui.info.mapper.NewsMapper.selectList  : <==      Total: 1
-17:12:13.053-[DESKTOP-44TL0F9][1cca332a311745778a573a214d7059b9]-- INFO 10784 --- [io-20002-exec-5] com.hui.info.controller.NewsController   : 新闻查询接口
-17:12:13.072-[DESKTOP-44TL0F9][1cca332a311745778a573a214d7059b9]--DEBUG 10784 --- [io-20002-exec-5] c.hui.info.mapper.NewsMapper.selectList  : ==>  Preparing: SELECT id,title,date,author,content,image,url,label FROM news WHERE (label = ?) ORDER BY date DESC
-17:12:13.073-[DESKTOP-44TL0F9][1cca332a311745778a573a214d7059b9]--DEBUG 10784 --- [io-20002-exec-5] c.hui.info.mapper.NewsMapper.selectList  : ==> Parameters: 2(Integer)
-17:12:13.084-[DESKTOP-44TL0F9][1cca332a311745778a573a214d7059b9]--DEBUG 10784 --- [io-20002-exec-5] c.hui.info.mapper.NewsMapper.selectList  : <==      Total: 0
-17:12:18.563-[DESKTOP-44TL0F9][5e655eb9b9674dc0a2c66eb95e7aad4e]-- INFO 10784 --- [io-20002-exec-6] com.hui.info.controller.NewsController   : 新闻查询接口
-17:12:18.578-[DESKTOP-44TL0F9][5e655eb9b9674dc0a2c66eb95e7aad4e]--DEBUG 10784 --- [io-20002-exec-6] c.hui.info.mapper.NewsMapper.selectList  : ==>  Preparing: SELECT id,title,date,author,content,image,url,label FROM news WHERE (label = ?) ORDER BY date DESC
-17:12:18.579-[DESKTOP-44TL0F9][5e655eb9b9674dc0a2c66eb95e7aad4e]--DEBUG 10784 --- [io-20002-exec-6] c.hui.info.mapper.NewsMapper.selectList  : ==> Parameters: 1(Integer)
-17:12:18.590-[DESKTOP-44TL0F9][5e655eb9b9674dc0a2c66eb95e7aad4e]--DEBUG 10784 --- [io-20002-exec-6] c.hui.info.mapper.NewsMapper.selectList  : <==      Total: 1
-17:13:04.964-[DESKTOP-44TL0F9][7259c84f3ca4454f865c117959d7c123]-- INFO 10784 --- [o-20002-exec-10] com.hui.info.controller.NewsController   : 新闻查询接口
-17:13:04.985-[DESKTOP-44TL0F9][7259c84f3ca4454f865c117959d7c123]--DEBUG 10784 --- [o-20002-exec-10] c.hui.info.mapper.NewsMapper.selectList  : ==>  Preparing: SELECT id,title,date,author,content,image,url,label FROM news WHERE (label = ?) ORDER BY date DESC
-17:13:04.985-[DESKTOP-44TL0F9][7259c84f3ca4454f865c117959d7c123]--DEBUG 10784 --- [o-20002-exec-10] c.hui.info.mapper.NewsMapper.selectList  : ==> Parameters: 0(Integer)
-17:13:05.003-[DESKTOP-44TL0F9][7259c84f3ca4454f865c117959d7c123]--DEBUG 10784 --- [o-20002-exec-10] c.hui.info.mapper.NewsMapper.selectList  : <==      Total: 6
-17:13:11.313-[DESKTOP-44TL0F9][sys]-- WARN 10784 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-17:13:11.313-[DESKTOP-44TL0F9][sys]-- WARN 10784 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-17:13:11.313-[DESKTOP-44TL0F9][sys]-- WARN 10784 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-17:13:11.314-[DESKTOP-44TL0F9][sys]-- WARN 10784 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-17:13:11.388-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-17:13:11.389-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@info-service:localhost:20002 from beat map.
-17:13:11.389-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 deregistering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-17:13:11.396-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-17:13:11.396-[DESKTOP-44TL0F9][sys]-- INFO 10784 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-17:39:13.952-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.hui.info.InfoApplication             : The following 1 profile is active: "local"
-17:39:14.918-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.hui.info.InfoApplication             : The following 1 profile is active: "local"
-17:39:14.962-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:39:14.964-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-17:39:14.985-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 MongoDB repository interfaces.
-17:39:15.006-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:39:15.007-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-17:39:15.021-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-17:39:15.472-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9649ef72-68a6-3ff1-9232-687be02cc2b7
-17:39:15.982-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:15.991-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:15.992-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$600/0x000001e84d542c78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:15.998-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.041-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.045-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.163-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:39:16.164-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-17:39:16.181-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 MongoDB repository interfaces.
-17:39:16.192-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-17:39:16.193-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-17:39:16.204-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-17:39:16.317-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20002 (http)
-17:39:16.318-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-17:39:16.318-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-17:39:16.318-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-17:39:16.322-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-17:39:16.332-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-17:39:16.332-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-17:39:16.523-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-17:39:16.524-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2557 ms
-17:39:16.528-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9649ef72-68a6-3ff1-9232-687be02cc2b7
-17:39:16.866-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
-17:39:16.892-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.898-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.899-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$600/0x000002ba8f5477e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.902-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.935-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:16.938-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-17:39:17.524-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20002 (http)
-17:39:17.530-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-17:39:17.530-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-17:39:17.530-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-17:39:17.541-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-17:39:17.562-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-17:39:17.562-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-17:39:17.978-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-17:39:17.978-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3038 ms
-17:39:18.551-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
-17:39:19.511-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-17:39:21.130-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-17:39:21.354-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@427128a6]}, clusterSettings={hosts=[121.37.242.119:17017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-17:39:21.381-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:82}] to 121.37.242.119:17017
-17:39:21.381-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:81}] to 121.37.242.119:17017
-17:39:21.382-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [7.242.119:17017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=121.37.242.119:17017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=48118100}
-17:39:23.191-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7a0f1f9d]}, clusterSettings={hosts=[121.37.242.119:17017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-17:39:23.220-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:84}] to 121.37.242.119:17017
-17:39:23.220-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:83}] to 121.37.242.119:17017
-17:39:23.220-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [7.242.119:17017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=121.37.242.119:17017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=87535400}
-17:39:24.547-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17:39:25.258-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:39:25.259-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-17:39:25.260-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:39:25.371-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20002 (http) with context path ''
-17:39:25.378-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=20002, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@info-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-17:39:25.379-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 registering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-17:39:25.392-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP info-service localhost:20002 register finished
-17:39:26.156-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17:39:26.374-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:39:26.385-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:39:26.844-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:39:26.846-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-17:39:26.851-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:39:26.901-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17:39:26.947-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:39:26.956-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-17:39:26.970-[DESKTOP-44TL0F9][sys]-- WARN 21756 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 20002 is already in use
-17:39:27.004-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-17:39:27.005-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
-17:39:27.005-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
-17:39:27.877-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.hui.info.InfoApplication             : Started InfoApplication in 19.454 seconds (JVM running for 20.518)
-17:39:27.883-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service-local.yaml+DEFAULT_GROUP
-17:39:27.885-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service-local.yaml, group=DEFAULT_GROUP, cnt=1
-17:39:27.885-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service-local.yaml, group=DEFAULT_GROUP
-17:39:27.885-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service+DEFAULT_GROUP
-17:39:27.885-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service, group=DEFAULT_GROUP, cnt=1
-17:39:27.885-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service, group=DEFAULT_GROUP
-17:39:27.886-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service.yaml+DEFAULT_GROUP
-17:39:27.886-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service.yaml, group=DEFAULT_GROUP, cnt=1
-17:39:27.886-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service.yaml, group=DEFAULT_GROUP
-17:39:27.887-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [           main] com.hui.info.InfoApplication             : --/
----------------------------------------------------------------------------------------
-	Application 'info-service' is running! Access URLs:
-	Local: 		http://localhost:20002
-	External: 	http://192.168.1.119:20002
-	Profile(s): 	[local]
----------------------------------------------------------------------------------------
-17:39:27.970-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
-17:39:30.994-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
-17:39:30.995-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-17:39:34.029-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-17:39:34.031-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
-17:39:34.033-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
-17:39:34.034-[DESKTOP-44TL0F9][sys]-- WARN 21756 --- [           main] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
-17:39:34.036-[DESKTOP-44TL0F9][sys]-- WARN 21756 --- [           main] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
-17:39:34.036-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
-17:39:34.037-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
-17:39:34.037-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
-17:39:34.038-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:39:34.038-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-17:39:34.038-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-17:39:34.057-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-17:39:34.074-[DESKTOP-44TL0F9][sys]-- INFO 21756 --- [           main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-17:39:34.105-[DESKTOP-44TL0F9][sys]--ERROR 21756 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 20002 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 20002 or configure this application to listen on another port.
-
-17:39:34.107-[DESKTOP-44TL0F9][sys]-- WARN 21756 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-17:39:34.108-[DESKTOP-44TL0F9][sys]-- WARN 21756 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-17:39:34.107-[DESKTOP-44TL0F9][sys]-- WARN 21756 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-17:39:34.109-[DESKTOP-44TL0F9][sys]-- WARN 21756 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-17:39:47.793-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [io-20002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:39:47.793-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [io-20002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-17:39:47.797-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [io-20002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-17:41:47.043-[DESKTOP-44TL0F9][sys]-- WARN 20540 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-17:41:47.044-[DESKTOP-44TL0F9][sys]-- WARN 20540 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-17:41:47.048-[DESKTOP-44TL0F9][sys]-- WARN 20540 --- [       Thread-2] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-17:41:47.050-[DESKTOP-44TL0F9][sys]-- WARN 20540 --- [       Thread-2] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-17:41:47.152-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-17:41:47.154-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@info-service:localhost:20002 from beat map.
-17:41:47.154-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 deregistering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-17:41:47.174-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-17:41:47.176-[DESKTOP-44TL0F9][sys]-- INFO 20540 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-22:04:48.573-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.hui.info.InfoApplication             : The following 1 profile is active: "local"
-22:04:49.765-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-22:04:49.767-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-22:04:49.783-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 MongoDB repository interfaces.
-22:04:49.794-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-22:04:49.796-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-22:04:49.807-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
-22:04:50.382-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9649ef72-68a6-3ff1-9232-687be02cc2b7
-22:04:50.835-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-22:04:50.839-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-22:04:50.840-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$600/0x000001d001551790] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-22:04:50.843-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-22:04:50.883-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-22:04:50.886-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-22:04:51.286-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20002 (http)
-22:04:51.288-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-22:04:51.288-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-22:04:51.289-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-22:04:51.295-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-22:04:51.310-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-22:04:51.310-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-22:04:51.520-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-22:04:51.520-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2909 ms
-22:04:51.821-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
-22:04:53.291-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-22:04:54.241-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.9+11-LTS-201"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5a3d52a0]}, clusterSettings={hosts=[121.37.242.119:17017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
-22:04:54.274-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:85}] to 121.37.242.119:17017
-22:04:54.274-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [7.242.119:17017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:86}] to 121.37.242.119:17017
-22:04:54.275-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [7.242.119:17017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=121.37.242.119:17017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37581500}
-22:04:56.448-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-22:04:56.877-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-22:04:56.878-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
-22:04:56.878-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
-22:04:56.970-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20002 (http) with context path ''
-22:04:56.974-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=20002, ip='localhost', weight=1.0, serviceName='DEFAULT_GROUP@@info-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-22:04:56.975-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 registering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-22:04:56.987-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP info-service localhost:20002 register finished
-22:04:57.961-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
-22:04:57.999-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@info-service@@DEFAULT -> [{"instanceId":"localhost#20002#DEFAULT#DEFAULT_GROUP@@info-service","ip":"localhost","port":20002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@info-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
-22:04:58.245-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-22:04:58.735-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.hui.info.InfoApplication             : Started InfoApplication in 15.042 seconds (JVM running for 16.389)
-22:04:58.738-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service-local.yaml+DEFAULT_GROUP
-22:04:58.739-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service-local.yaml, group=DEFAULT_GROUP, cnt=1
-22:04:58.739-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service-local.yaml, group=DEFAULT_GROUP
-22:04:58.740-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service+DEFAULT_GROUP
-22:04:58.740-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service, group=DEFAULT_GROUP, cnt=1
-22:04:58.740-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service, group=DEFAULT_GROUP
-22:04:58.740-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-121.37.242.119_8848] [subscribe] info-service.yaml+DEFAULT_GROUP
-22:04:58.740-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-121.37.242.119_8848] [add-listener] ok, tenant=, dataId=info-service.yaml, group=DEFAULT_GROUP, cnt=1
-22:04:58.740-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=info-service.yaml, group=DEFAULT_GROUP
-22:04:58.741-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [           main] com.hui.info.InfoApplication             : --/
----------------------------------------------------------------------------------------
-	Application 'info-service' is running! Access URLs:
-	Local: 		http://localhost:20002
-	External: 	http://10.64.37.5:20002
-	Profile(s): 	[local]
----------------------------------------------------------------------------------------
-22:05:01.136-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [io-20002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-22:05:01.136-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [io-20002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-22:05:01.139-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [io-20002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-22:05:14.047-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [io-20002-exec-1] com.hui.info.controller.InfoController   : 实验室简介接口
-22:05:14.154-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [io-20002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-22:05:14.619-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [io-20002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-22:05:14.635-[DESKTOP-44TL0F9][sys]--DEBUG 22380 --- [io-20002-exec-1] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
-22:05:14.673-[DESKTOP-44TL0F9][sys]--DEBUG 22380 --- [io-20002-exec-1] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
-22:05:14.733-[DESKTOP-44TL0F9][sys]--DEBUG 22380 --- [io-20002-exec-1] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
-22:05:14.741-[DESKTOP-44TL0F9][sys]-- INFO 22380 --- [io-20002-exec-1] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
-22:05:29.960-[DESKTOP-44TL0F9][sys]-- WARN 22380 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-22:05:29.960-[DESKTOP-44TL0F9][sys]-- WARN 22380 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-22:05:29.961-[DESKTOP-44TL0F9][sys]-- WARN 22380 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-22:05:29.961-[DESKTOP-44TL0F9][sys]-- WARN 22380 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:14:35.917-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [io-20002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:14:35.918-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:14:35.921-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [io-20002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+16:14:36.143-[DESKTOP-44TL0F9][27efff85d2f14cf0afa325ff161066ca]-- INFO 11840 --- [io-20002-exec-4] com.hui.info.controller.InfoController   : 实验室简介接口
+16:14:36.146-[DESKTOP-44TL0F9][6b82e336bcbf48a0bf0de8df95c5cc11]-- INFO 11840 --- [io-20002-exec-1] com.hui.info.controller.TeamsController  : 团队查询接口
+16:14:36.207-[DESKTOP-44TL0F9][6b82e336bcbf48a0bf0de8df95c5cc11]-- WARN 11840 --- [io-20002-exec-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @fd07cbb
+16:14:36.216-[DESKTOP-44TL0F9][27efff85d2f14cf0afa325ff161066ca]-- INFO 11840 --- [io-20002-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:14:38.501-[DESKTOP-44TL0F9][27efff85d2f14cf0afa325ff161066ca]-- INFO 11840 --- [io-20002-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:14:38.513-[DESKTOP-44TL0F9][6b82e336bcbf48a0bf0de8df95c5cc11]--DEBUG 11840 --- [io-20002-exec-1] c.h.info.mapper.TeamsMapper.selectList   : ==>  Preparing: SELECT id,depart,name,image,job,`desc`,`core`,info,create_time FROM teams WHERE (depart = ?) ORDER BY `core` DESC
+16:14:38.544-[DESKTOP-44TL0F9][6b82e336bcbf48a0bf0de8df95c5cc11]--DEBUG 11840 --- [io-20002-exec-1] c.h.info.mapper.TeamsMapper.selectList   : ==> Parameters: 1(Integer)
+16:14:38.603-[DESKTOP-44TL0F9][6b82e336bcbf48a0bf0de8df95c5cc11]--DEBUG 11840 --- [io-20002-exec-1] c.h.info.mapper.TeamsMapper.selectList   : <==      Total: 4
+16:14:38.613-[DESKTOP-44TL0F9][27efff85d2f14cf0afa325ff161066ca]--DEBUG 11840 --- [io-20002-exec-4] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
+16:14:38.613-[DESKTOP-44TL0F9][27efff85d2f14cf0afa325ff161066ca]--DEBUG 11840 --- [io-20002-exec-4] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
+16:14:38.623-[DESKTOP-44TL0F9][27efff85d2f14cf0afa325ff161066ca]--DEBUG 11840 --- [io-20002-exec-4] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
+16:14:38.625-[DESKTOP-44TL0F9][27efff85d2f14cf0afa325ff161066ca]-- INFO 11840 --- [io-20002-exec-4] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
+16:14:39.724-[DESKTOP-44TL0F9][e5977482180d4552b0248d235ffe3179]-- INFO 11840 --- [io-20002-exec-7] com.hui.info.controller.InfoController   : 实验室简介接口
+16:14:39.734-[DESKTOP-44TL0F9][e5977482180d4552b0248d235ffe3179]--DEBUG 11840 --- [io-20002-exec-7] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
+16:14:39.734-[DESKTOP-44TL0F9][e5977482180d4552b0248d235ffe3179]--DEBUG 11840 --- [io-20002-exec-7] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
+16:14:39.744-[DESKTOP-44TL0F9][e5977482180d4552b0248d235ffe3179]--DEBUG 11840 --- [io-20002-exec-7] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
+16:14:39.745-[DESKTOP-44TL0F9][e5977482180d4552b0248d235ffe3179]-- INFO 11840 --- [io-20002-exec-7] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
+16:14:39.758-[DESKTOP-44TL0F9][39b548e894ac42a18e2555e1430dbfe4]-- INFO 11840 --- [io-20002-exec-2] com.hui.info.controller.InfoController   : 实验室简介接口
+16:14:39.761-[DESKTOP-44TL0F9][39b548e894ac42a18e2555e1430dbfe4]--DEBUG 11840 --- [io-20002-exec-2] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
+16:14:39.762-[DESKTOP-44TL0F9][39b548e894ac42a18e2555e1430dbfe4]--DEBUG 11840 --- [io-20002-exec-2] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
+16:14:39.774-[DESKTOP-44TL0F9][39b548e894ac42a18e2555e1430dbfe4]--DEBUG 11840 --- [io-20002-exec-2] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
+16:14:39.774-[DESKTOP-44TL0F9][39b548e894ac42a18e2555e1430dbfe4]-- INFO 11840 --- [io-20002-exec-2] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
+16:15:13.713-[DESKTOP-44TL0F9][a0472b54a6df4973883933e341b5bc33]-- INFO 11840 --- [io-20002-exec-5] c.hui.info.controller.EmployController   : 招聘查询接口
+16:15:13.740-[DESKTOP-44TL0F9][2260808627754e279b6f76651b037800]-- INFO 11840 --- [io-20002-exec-6] com.hui.info.controller.InfoController   : 实验室简介接口
+16:15:13.748-[DESKTOP-44TL0F9][a0472b54a6df4973883933e341b5bc33]--DEBUG 11840 --- [io-20002-exec-5] c.h.info.mapper.EmployMapper.selectList  : ==>  Preparing: SELECT id,title,work,requirement,label,create_time,description,status FROM employ WHERE (label = ?) ORDER BY create_time DESC
+16:15:13.749-[DESKTOP-44TL0F9][a0472b54a6df4973883933e341b5bc33]--DEBUG 11840 --- [io-20002-exec-5] c.h.info.mapper.EmployMapper.selectList  : ==> Parameters: 1(Integer)
+16:15:13.751-[DESKTOP-44TL0F9][2260808627754e279b6f76651b037800]--DEBUG 11840 --- [io-20002-exec-6] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
+16:15:13.751-[DESKTOP-44TL0F9][2260808627754e279b6f76651b037800]--DEBUG 11840 --- [io-20002-exec-6] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
+16:15:13.762-[DESKTOP-44TL0F9][2260808627754e279b6f76651b037800]--DEBUG 11840 --- [io-20002-exec-6] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
+16:15:13.762-[DESKTOP-44TL0F9][2260808627754e279b6f76651b037800]-- INFO 11840 --- [io-20002-exec-6] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
+16:15:13.767-[DESKTOP-44TL0F9][a0472b54a6df4973883933e341b5bc33]--DEBUG 11840 --- [io-20002-exec-5] c.h.info.mapper.EmployMapper.selectList  : <==      Total: 10
+16:15:16.989-[DESKTOP-44TL0F9][dc5f3d492eae46dbb948727fb4c2ff1e]-- INFO 11840 --- [io-20002-exec-3] com.hui.info.controller.InfoController   : 实验室简介接口
+16:15:17.000-[DESKTOP-44TL0F9][dc5f3d492eae46dbb948727fb4c2ff1e]--DEBUG 11840 --- [io-20002-exec-3] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
+16:15:17.000-[DESKTOP-44TL0F9][dc5f3d492eae46dbb948727fb4c2ff1e]--DEBUG 11840 --- [io-20002-exec-3] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
+16:15:17.008-[DESKTOP-44TL0F9][dc5f3d492eae46dbb948727fb4c2ff1e]--DEBUG 11840 --- [io-20002-exec-3] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
+16:15:17.009-[DESKTOP-44TL0F9][dc5f3d492eae46dbb948727fb4c2ff1e]-- INFO 11840 --- [io-20002-exec-3] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
+16:15:17.020-[DESKTOP-44TL0F9][8bf7091a9e144d5593e6f17bd3bcd6dc]-- INFO 11840 --- [io-20002-exec-8] com.hui.info.controller.InfoController   : 实验室简介接口
+16:15:17.021-[DESKTOP-44TL0F9][8bf7091a9e144d5593e6f17bd3bcd6dc]--DEBUG 11840 --- [io-20002-exec-8] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
+16:15:17.021-[DESKTOP-44TL0F9][8bf7091a9e144d5593e6f17bd3bcd6dc]--DEBUG 11840 --- [io-20002-exec-8] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
+16:15:17.033-[DESKTOP-44TL0F9][8bf7091a9e144d5593e6f17bd3bcd6dc]--DEBUG 11840 --- [io-20002-exec-8] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
+16:15:17.034-[DESKTOP-44TL0F9][8bf7091a9e144d5593e6f17bd3bcd6dc]-- INFO 11840 --- [io-20002-exec-8] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
+16:15:21.337-[DESKTOP-44TL0F9][4aeadf43616541f2bd3bda50870e35fd]-- INFO 11840 --- [io-20002-exec-9] com.hui.info.controller.InfoController   : 实验室简介接口
+16:15:21.343-[DESKTOP-44TL0F9][21222896af274fb49628a2e9c077bd7f]-- INFO 11840 --- [o-20002-exec-10] com.hui.info.controller.NewsController   : 新闻查询接口
+16:15:21.348-[DESKTOP-44TL0F9][4aeadf43616541f2bd3bda50870e35fd]--DEBUG 11840 --- [io-20002-exec-9] c.hui.info.mapper.InfoMapper.selectList  : ==>  Preparing: SELECT id,title,content1,content2,image,weimg,phone,email,address,create_time FROM info
+16:15:21.348-[DESKTOP-44TL0F9][4aeadf43616541f2bd3bda50870e35fd]--DEBUG 11840 --- [io-20002-exec-9] c.hui.info.mapper.InfoMapper.selectList  : ==> Parameters: 
+16:15:21.359-[DESKTOP-44TL0F9][4aeadf43616541f2bd3bda50870e35fd]--DEBUG 11840 --- [io-20002-exec-9] c.hui.info.mapper.InfoMapper.selectList  : <==      Total: 1
+16:15:21.359-[DESKTOP-44TL0F9][21222896af274fb49628a2e9c077bd7f]--DEBUG 11840 --- [o-20002-exec-10] c.hui.info.mapper.NewsMapper.selectList  : ==>  Preparing: SELECT id,title,date,author,content,image,url,label FROM news WHERE (label = ?) ORDER BY date DESC
+16:15:21.359-[DESKTOP-44TL0F9][4aeadf43616541f2bd3bda50870e35fd]-- INFO 11840 --- [io-20002-exec-9] c.hui.info.service.impl.InfoServiceImpl  : 实验室介绍信息：[Info(id=3, title=未来媒体实验室, content1=未来媒体实验室致力于探索人工智能与传媒技术相融合的创新研究，旨在推动媒体行业的整体转型。实验室聚焦于人工智能与新媒体的未来，建立世界领先的人工智能及媒体技术研究与合作平台。通过与华为、百度、微软等企业的合作，实验室将共同致力于人工智能与传媒技术的研究，探索AI+移动媒体的未来，促进媒体行业的整体转型。, content2=实验室的研究内容涵盖了人工智能、大数据、虚拟现实等技术对媒体行业的影响与变革，旨在通过技术研发推动媒体行业的创新发展。实验室还将面向国内媒体及中小型企业提供定制化咨询，成员机构相互合作进行课题和技术研发，共享成果，为政府机构、大型企业提供长期咨询和技术研发服务。, image=https://wlmtsys.com:9000/wlmtsys/2024/09/20/5cdd1eb8fd354e719642f377b60d2996.jpg, weimg=https://wlmtsys.com:9000/wlmtsys/2024/09/20/90e57bc9b0bc485ebfb09ebf3446f399.jpg, phone=13719814204, email=wlmtsys@163.com, address=广东省广州市白云区江高镇学苑路1号, createTime=2024-09-20T22:55:05)]
+16:15:21.359-[DESKTOP-44TL0F9][21222896af274fb49628a2e9c077bd7f]--DEBUG 11840 --- [o-20002-exec-10] c.hui.info.mapper.NewsMapper.selectList  : ==> Parameters: 0(Integer)
+16:15:21.374-[DESKTOP-44TL0F9][21222896af274fb49628a2e9c077bd7f]--DEBUG 11840 --- [o-20002-exec-10] c.hui.info.mapper.NewsMapper.selectList  : <==      Total: 6
+16:33:49.009-[DESKTOP-44TL0F9][sys]-- WARN 11840 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:33:49.009-[DESKTOP-44TL0F9][sys]-- WARN 11840 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:33:49.010-[DESKTOP-44TL0F9][sys]-- WARN 11840 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:33:49.013-[DESKTOP-44TL0F9][sys]-- WARN 11840 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:33:49.178-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:33:49.178-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@info-service:localhost:20002 from beat map.
+16:33:49.179-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] 6e47eddb-e8aa-4265-b62e-e5e5f1bdf625 deregistering service DEFAULT_GROUP@@info-service with instance: Instance{instanceId='null', ip='localhost', port=20002, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+16:33:49.189-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:33:49.189-[DESKTOP-44TL0F9][sys]-- INFO 11840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin

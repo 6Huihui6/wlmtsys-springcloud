@@ -89,7 +89,7 @@ public class LearningServiceImpl extends ServiceImpl<LearningMapper, Learning> i
     public ResponseResult listLearning(LearnPageQuery query) {
         Page<Learning> page = lambdaQuery()
                 .eq(query.getChannelId() != null, Learning::getChannelId, query.getChannelId())
-                .eq(query.getType() != null, Learning::getType, query.getType())
+                .eq(query.getType() == 0, Learning::getType, query.getType())
                 .like(query.getKeyword() != null, Learning::getTitle, query.getKeyword())
                 .like(query.getKeyword() != null, Learning::getDescription, query.getKeyword())
                 .page(query.toMpPageDefaultSortByCreateTimeDesc());

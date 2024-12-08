@@ -35,7 +35,7 @@ public class UserVo implements Serializable {
     @TableId(value = "user_id", type = IdType.AUTO)
     private Integer userId;
 
-    @ApiModelProperty(value = "用户类型：1-员工, 2-普通学员，3-老师")
+    @ApiModelProperty(value = "用户类型：1-内部人员, 2-外部人员，3-管理员")
     private Integer type;
 
     @ApiModelProperty(value = "性别：0-男性，1-女性")
