@@ -35,7 +35,7 @@ public class CommentRepayController {
     public ResponseResult saveCommentRepay(@RequestBody CommentRepaySaveDto dto){
         return commentRepayService.saveCommentRepay(dto);
     }
-    @ApiOperation(value = "保存评论回复点赞", notes = "保存评论回复点赞")
+    @ApiOperation(value = "点赞评论回复", notes = "点赞评论回复")
     @PostMapping("/like")
     public ResponseResult saveCommentRepayLike(@RequestBody CommentRepayLikeDto dto){
         return commentRepayService.saveCommentRepayLike(dto);

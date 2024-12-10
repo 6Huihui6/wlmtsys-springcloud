@@ -164,9 +164,13 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
     @Override
     public ResponseResult like(LikesBehaviorDto dto) {
         // 1.基于前端的参数，判断是执行点赞还是取消点赞
+        Long user = UserContext.getUser();
+        if (user == null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.NEED_LOGIN);
+        }
         boolean success = dto.getOperation()==1 ? likes(dto) : unlike(dto);
         if (!success) {
-            return ResponseResult.errorResult(AppHttpCodeEnum.DATA_EXIST);
+            return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_REPEAT);
         }
         // 3.如果执行成功，统计点赞总数
         Long likedTimes = redisTemplate.opsForSet()
