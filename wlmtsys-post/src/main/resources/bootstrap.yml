@@ -56,5 +56,5 @@ wlmtsys:
 logging:
   level:
     com.hui: debug
-#    org.springframework: debug
-
+    org.springframework: debug
+    org.hibernate: debug

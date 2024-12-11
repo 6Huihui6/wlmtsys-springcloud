@@ -108,8 +108,8 @@ public class CommentServiceImpl implements CommentService {
         }
 
         Comment apComment = mongoTemplate.findById(dto.getCommentId(), Comment.class);
-        Query query = Query.query(Criteria.where("commentRepayId").is(dto.getCommentId()).and("authorId").is(userId));
-        CommentRepayLike isLike = mongoTemplate.findOne(query, CommentRepayLike.class);
+        Query query = Query.query(Criteria.where("commentId").is(dto.getCommentId()).and("authorId").is(userId));
+        CommentLike isLike = mongoTemplate.findOne(query, CommentLike.class);
         //3.点赞
         if (apComment != null && dto.getOperation() == 0) {
             if(isLike != null){
