@@ -2,6 +2,8 @@ package com.hui.post.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hui.api.client.user.UserClient;
+import com.hui.common.autoconfigure.mq.RabbitMqHelper;
+import com.hui.common.constants.MqConstants;
 import com.hui.common.enums.AppHttpCodeEnum;
 import com.hui.common.utils.BeanUtils;
 import com.hui.common.utils.CollUtils;
@@ -49,6 +51,7 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
     private final IImagesService imagesService;
     private final StringRedisTemplate redisTemplate ;
     private final UserClient userClient ;
+    private final RabbitMqHelper rabbitMqHelper;
     /**
      * 新增或编辑帖子
      *
@@ -185,6 +188,7 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
                 dto.getPostsId().toString(),
                 likedTimes
         );
+
         return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
     }
 
@@ -213,6 +217,11 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
                 dto.getPostsId().toString(),
                 collectTimes
         );
+        // 5.发送消息到MQ
+        rabbitMqHelper.send(
+                MqConstants.Exchange.LEARNING_EXCHANGE,
+                MqConstants.Key.WRITE_REPLY,
+                dto.getPostsId());
         return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
     }
 
@@ -249,6 +258,11 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
         String key = BehaviorConstants.LIKE_BEHAVIOR + dto.getPostsId();
         // 3.执行SADD命令
         Long result = redisTemplate.opsForSet().add(key, userId.toString());
+        // 5.发送消息到MQ
+        rabbitMqHelper.send(
+                MqConstants.Exchange.LEARNING_EXCHANGE,
+                MqConstants.Key.WRITE_REPLY,
+                dto.getPostsId());
         return result != null && result > 0;
     }
     private boolean unlike(@NotNull LikesBehaviorDto dto) {

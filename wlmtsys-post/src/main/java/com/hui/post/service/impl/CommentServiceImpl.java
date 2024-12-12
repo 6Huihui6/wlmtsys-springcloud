@@ -3,6 +3,7 @@ package com.hui.post.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.hui.api.client.user.UserClient;
 import com.hui.common.autoconfigure.mq.RabbitMqHelper;
+import com.hui.common.constants.MqConstants;
 import com.hui.common.enums.AppHttpCodeEnum;
 import com.hui.common.utils.BeanUtils;
 import com.hui.common.utils.UserContext;
@@ -90,6 +91,11 @@ public class CommentServiceImpl implements CommentService {
                 COMMENT_NEW_KEY,
                 JSON.toJSONString(mess)
         );
+        rabbitMqHelper.send(
+                    MqConstants.Exchange.LEARNING_EXCHANGE,
+                    MqConstants.Key.WRITE_REPLY,
+                    dto.getPostId());
+
         return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
     }
 

@@ -9,8 +9,6 @@ public interface MqConstants {
         /*岗位有关的交换机*/
         String JOBS_EXCHANGE = "jobs.topic";
 
-        /*订单有关的交换机*/
-        String ORDER_EXCHANGE = "order.topic";
 
         /*学习有关的交换机*/
         String LEARNING_EXCHANGE = "learning.topic";
@@ -55,8 +53,9 @@ public interface MqConstants {
         String ORDER_REFUND_KEY = "order.refund";
 
         /*积分相关RoutingKey*/
-        /* 写回答 */
+        /* 写评论 */
         String WRITE_REPLY = "reply.new";
+
         /* 签到 */
         String SIGN_IN = "sign.in";
         /* 学习视频 */

@@ -74,7 +74,38 @@ create table wlmtsys_post.channel
     parent_id int          null
 );
 
+create table points_board
+(
+    id      bigint   not null comment '榜单id'
+        primary key,
+    post_id bigint   not null comment '帖子id',
+    points  int      not null comment '积分值',
+    `rank`  tinyint  not null comment '名次，只记录赛季前100',
+    season  smallint not null comment '赛季，例如 1,就是第一赛季，2-就是第二赛季',
+    constraint idx_season_user
+        unique (season, post_id)
+)
+    comment '积分榜单' charset = utf8mb4
+                         row_format = DYNAMIC;
 
+
+create table points_record
+(
+    id          bigint auto_increment comment '积分记录表id'
+        primary key,
+    post_id     bigint                             not null comment '帖子id',
+    type        tinyint                            not null comment '积分方式：1-课程学习，2-每日签到，3-课程问答， 4-课程笔记，5-课程评价',
+    points      tinyint                            not null comment '积分值',
+    create_time datetime default CURRENT_TIMESTAMP not null comment '创建时间'
+)
+    comment '学习积分记录，每个月底清零' charset = utf8mb4
+                                        row_format = DYNAMIC;
+
+create index idx_create_time
+    on points_record (create_time);
+
+create index idx_user_id
+    on points_record (post_id, type);
 
 
 
