@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="bug">
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/po/PointsRecordType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/query/PointsBoardQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/PointsBoardItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-model/src/main/java/com/hui/model/post/vo/PointsBoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mq/LearningPointsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mq/message/SignInMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/MqConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-common/src/main/java/com/hui/common/constants/MqConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/constants/CommonConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys_post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys_post.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,6 +357,7 @@
       <workItem from="1733792095435" duration="1494000" />
       <workItem from="1733885878034" duration="6087000" />
       <workItem from="1733979682963" duration="2298000" />
+      <workItem from="1733983723020" duration="133000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />
