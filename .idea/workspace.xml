@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="热点帖子排行">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/488f8d68-e9be-421a-a0f4-efa047e7488e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/impl/OBSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/impl/OBSServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ChannelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ChannelMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ImagesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ImagesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/PostMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ViewRecordsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ViewRecordsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mq/LearningPointsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mq/LearningPointsListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentRepayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentRepayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ChannelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ChannelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentRepayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentRepayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ImagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ImagesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsBoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsBoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsRecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="hui" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -413,6 +390,8 @@
       <workItem from="1747730899340" duration="15000" />
       <workItem from="1747730962573" duration="769000" />
       <workItem from="1747742337951" duration="4759000" />
+      <workItem from="1747751501683" duration="153000" />
+      <workItem from="1747751660924" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />
