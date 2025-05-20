@@ -1,6 +1,5 @@
 package com.hui.post.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.hui.common.utils.DateUtils;
 import com.hui.model.post.po.PointsRecord;
 import com.hui.post.constants.CommonConstants;

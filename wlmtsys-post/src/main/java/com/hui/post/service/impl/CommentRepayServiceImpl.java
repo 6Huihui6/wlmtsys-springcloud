@@ -14,7 +14,6 @@ import com.hui.model.post.po.CommentRepay;
 import com.hui.model.post.po.CommentRepayLike;
 import com.hui.model.post.po.Comment;
 import com.hui.model.post.vo.CommentRepayVo;
-import com.hui.model.user.dto.UserDTO;
 import com.hui.model.user.vos.UserVo;
 import com.hui.post.service.CommentRepayService;
 import lombok.RequiredArgsConstructor;
@@ -71,7 +70,7 @@ public class CommentRepayServiceImpl implements CommentRepayService {
         //3.2 用户已登录
 
         //需要查询当前评论中哪些数据被点赞了
-        List<String> idList = list.stream().map(x -> x.getId()).collect(Collectors.toList());
+        List<String> idList = list.stream().map(CommentRepay::getId).collect(Collectors.toList());
         Query query1 = Query.query(Criteria.where("commentRepayId").in(idList).and("authorId").is(userId));
         List<CommentRepayLike> commentRepayLikes = mongoTemplate.find(query1, CommentRepayLike.class);
         if(commentRepayLikes.isEmpty()){
@@ -190,12 +189,12 @@ public class CommentRepayServiceImpl implements CommentRepayService {
             mongoTemplate.save(commentRepay);
             }
             //删除评论点赞
-            Query query1 = Query.query(Criteria.where("commentRepayId").is(commentRepay.getId()).and("authorId").is(userId));
+            Query query1 = Query.query(Criteria.where("commentRepayId").is(commentRepay != null ? commentRepay.getId() : null).and("authorId").is(userId));
             mongoTemplate.remove(query1, CommentRepayLike.class);
         }
         //4.取消点赞
         Map<String,Object> result = new HashMap<>();
-        result.put("likes", commentRepay.getLikes());
+        result.put("likes", commentRepay != null ? commentRepay.getLikes() : null);
         return ResponseResult.okResult(result);
     }
 }

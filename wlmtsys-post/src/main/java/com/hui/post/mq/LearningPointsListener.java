@@ -16,7 +16,6 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class LearningPointsListener {
 
-//    private final IPointsBoardService boardService;
 
     private final IPointsRecordService recordService;
     @RabbitListener(bindings = @QueueBinding(

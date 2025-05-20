@@ -10,25 +10,19 @@ public interface CommentService {
 
     /**
      * 保存评论
-     * @param dto
-     * @return
      */
-    public ResponseResult saveComment(CommentSaveDto dto);
+    ResponseResult saveComment(CommentSaveDto dto);
 
 
     /**
      * 点赞
-     * @param dto
-     * @return
      */
     public ResponseResult like(CommentLikeDto dto);
 
     /**
      * 加载评论列表
-     * @param dto
-     * @return
      */
-    public ResponseResult findByArticleId(CommentDto dto);
+    ResponseResult findByArticleId(CommentDto dto);
 
 
 }

@@ -14,7 +14,6 @@ import com.hui.model.post.dto.CommentLikeDto;
 import com.hui.model.post.dto.CommentSaveDto;
 import com.hui.model.post.po.Comment;
 import com.hui.model.post.po.CommentLike;
-import com.hui.model.post.po.CommentRepayLike;
 import com.hui.model.post.vo.CommentVo;
 import com.hui.model.user.vos.UserVo;
 import com.hui.post.service.CommentService;
@@ -135,9 +134,14 @@ public class CommentServiceImpl implements CommentService {
                 return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_NOT_LIKE);
             }
             //更新评论点赞数量
-            int tmp = apComment.getLikes() - 1;
+            int tmp = 0;
+            if (apComment != null) {
+                tmp = apComment.getLikes() - 1;
+            }
             tmp = tmp < 1 ? 0 : tmp;
-            apComment.setLikes(tmp);
+            if (apComment != null) {
+                apComment.setLikes(tmp);
+            }
             mongoTemplate.save(apComment);
 
             //删除评论点赞
@@ -180,7 +184,7 @@ public class CommentServiceImpl implements CommentService {
         //3.2 用户已登录
 
         //需要查询当前评论中哪些数据被点赞了
-        List<String> idList = list.stream().map(x -> x.getId()).collect(Collectors.toList());
+        List<String> idList = list.stream().map(Comment::getId).collect(Collectors.toList());
         Query query1 = Query.query(Criteria.where("commentId").in(idList).and("authorId").is(userId));
         List<CommentLike> apCommentLikes = mongoTemplate.find(query1, CommentLike.class);
 

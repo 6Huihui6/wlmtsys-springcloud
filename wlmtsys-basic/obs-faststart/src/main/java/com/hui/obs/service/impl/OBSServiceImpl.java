@@ -29,14 +29,14 @@ public class OBSServiceImpl implements OBSService {
     public String uploadImage(MultipartFile mpFile, String type)  {
         try {
             String fileName = Uploader.getRandomName(mpFile);
-            File tempFile = File.createTempFile("drawu",fileName);
+            File tempFile = File.createTempFile("wlmtsys",fileName);
             mpFile.transferTo(tempFile);
             PutObjectRequest request = new PutObjectRequest();
             request.setFile(tempFile);
-            request.setBucketName("drawu");
-            request.setObjectKey(type + tempFile.getName());
+            request.setBucketName("wlmtsys");
+            request.setObjectKey(type+ "/" + tempFile.getName());
             OBS.client.putObject(request);
-            String obsUrl = "https://drawu.obs.cn-south-1.myhuaweicloud.com/images/" + tempFile.getName();
+            String obsUrl = "https://wlmtsys.obs.cn-south-1.myhuaweicloud.com/" +type+ "/" +tempFile.getName();
             return obsUrl;
         } catch (ObsException e) {
             System.out.println("putObject failed");

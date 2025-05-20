@@ -13,21 +13,16 @@ public interface CommentRepayService {
 
     /**
      * 查看更多回复内容
-     * @param dto
-     * @return
      */
-    public ResponseResult loadCommentRepay(CommentRepayDto dto);
+    ResponseResult loadCommentRepay(CommentRepayDto dto);
 
     /**
      * 保存回复
-     * @return
      */
-    public ResponseResult saveCommentRepay(CommentRepaySaveDto dto);
+    ResponseResult saveCommentRepay(CommentRepaySaveDto dto);
 
     /**
      * 点赞回复的评论
-     * @param dto
-     * @return
      */
-    public ResponseResult saveCommentRepayLike(CommentRepayLikeDto dto);
+    ResponseResult saveCommentRepayLike(CommentRepayLikeDto dto);
 }

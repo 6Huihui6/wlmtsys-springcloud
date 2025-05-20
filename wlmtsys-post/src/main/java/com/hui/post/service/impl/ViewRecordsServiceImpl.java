@@ -37,7 +37,6 @@ public class ViewRecordsServiceImpl extends ServiceImpl<ViewRecordsMapper, ViewR
     /**
      * 添加阅读记录
      *
-     * @param postId
      */
     @Override
     public ResponseResult addViewRecord(Integer postId) {

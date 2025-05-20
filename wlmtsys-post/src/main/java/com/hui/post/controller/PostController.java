@@ -9,7 +9,6 @@ import com.hui.model.post.dto.PostDto;
 import com.hui.post.service.IPostService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

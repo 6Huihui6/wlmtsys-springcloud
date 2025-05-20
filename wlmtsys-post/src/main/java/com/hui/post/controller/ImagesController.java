@@ -1,7 +1,6 @@
 package com.hui.post.controller;
 
 
-import com.hui.obs.service.OBSService;
 import com.hui.post.service.IImagesService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

@@ -36,8 +36,6 @@ public class ImagesServiceImpl extends ServiceImpl<ImagesMapper, Images> impleme
     /**
      * 保存图片
      *
-     * @param image
-     * @param postId
      */
     @Override
     public void saveImages(List<String> image, Integer postId) {

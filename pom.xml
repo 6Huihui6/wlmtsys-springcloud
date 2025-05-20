@@ -21,7 +21,7 @@
         <module>wlmtsys-utils</module>
         <module>wlmtsys-api</module>
     </modules>
-
+S
     <!-- 继承 Spring Boot 父工程 -->
     <parent>
         <groupId>org.springframework.boot</groupId>

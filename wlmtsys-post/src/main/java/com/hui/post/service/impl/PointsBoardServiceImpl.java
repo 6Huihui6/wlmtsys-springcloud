@@ -64,8 +64,6 @@ public class PointsBoardServiceImpl extends ServiceImpl<PointsBoardMapper, Point
         // 4.封装VO
         PointsBoardVO vo = new PointsBoardVO();
         // 4.1.处理我的信息
-//        vo.setPoints(myBoard.getPoints());
-//        vo.setRank(myBoard.getRank());
         if (CollUtils.isEmpty(list)) {
             return vo;
         }

@@ -9,7 +9,7 @@ import com.hui.model.post.dto.CommentSaveDto;
 import com.hui.post.service.CommentService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,10 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(tags = "添加评论")
 @RestController
 @RequestMapping("/comment")
+@RequiredArgsConstructor
 public class CommentController {
 
-    @Autowired
-    private CommentService commentService;
+
+    private final CommentService commentService;
 
     @ApiOperation("添加一级评论")
     @PostMapping("/save")

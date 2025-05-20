@@ -33,6 +33,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -179,7 +180,7 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
         Long likedTimes = redisTemplate.opsForSet()
                 .size(BehaviorConstants.LIKE_BEHAVIOR + dto.getPostsId());
         // 4.更新数据库中的点赞数
-        int likes = likedTimes.intValue();
+        int likes = Objects.requireNonNull(likedTimes).intValue();
         lambdaUpdate().set(Post::getLikes, likes).eq(Post::getPostId, dto.getPostsId()).update();
         String key = BehaviorConstants.LIKE_BEHAVIOR + BehaviorConstants.TOTAL;
         // 4.缓存点总数到Redis
@@ -195,7 +196,6 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
     /**
      * 收藏
      *
-     * @param dto
      */
     @Override
     public ResponseResult collect(CollectBehaviorDto dto) {
@@ -208,7 +208,7 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
         Long collectTimes = redisTemplate.opsForSet()
                 .size(BehaviorConstants.COLLECTION_BEHAVIOR + dto.getPostsId());
         // 4.更新数据库中的收藏数
-        int collects = collectTimes.intValue();
+        int collects = Objects.requireNonNull(collectTimes).intValue();
         lambdaUpdate().set(Post::getCollection, collects).eq(Post::getPostId, dto.getPostsId()).update();
         String key = BehaviorConstants.COLLECTION_BEHAVIOR + BehaviorConstants.TOTAL;
         // 4.缓存点总数到Redis

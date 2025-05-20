@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="bug" />
+    <list default="true" id="0ddac652-6537-4ca9-a2ee-708066b55b04" name="更改" comment="热点帖子排行">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/impl/OBSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-basic/obs-faststart/src/main/java/com/hui/obs/service/impl/OBSServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/CommentRepayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/ImagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ChannelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ChannelMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ImagesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ImagesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/PostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ViewRecordsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mapper/ViewRecordsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mq/LearningPointsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/mq/LearningPointsListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentRepayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentRepayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ChannelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ChannelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentRepayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentRepayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ImagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ImagesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsBoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsBoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PointsRecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wlmtsys-post/src/main/java/com/hui/post/service/impl/ViewRecordsServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,9 +61,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/6Huihui6/wlmtsys-springcloud.git&quot;,
-    &quot;accountId&quot;: &quot;545197a8-ba2f-4b19-887f-4483989c9cec&quot;
+    &quot;accountId&quot;: &quot;285c468f-dce8-4159-9ae7-bc6ae6f317a9&quot;
   }
 }</component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -186,7 +215,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LearnApplication">
+  <component name="RunManager" selected="Spring Boot.PostApplication">
     <configuration name="wlmtsys.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/../../OneDrive/桌面/wlmtsys.sql" />
       <script-mode>FILE</script-mode>
@@ -357,6 +386,33 @@
       <workItem from="1733979682963" duration="2298000" />
       <workItem from="1733983723020" duration="133000" />
       <workItem from="1733990769324" duration="333000" />
+      <workItem from="1733992136650" duration="13000" />
+      <workItem from="1734174326360" duration="1632000" />
+      <workItem from="1734654506460" duration="2042000" />
+      <workItem from="1740477588174" duration="362000" />
+      <workItem from="1741155426151" duration="257000" />
+      <workItem from="1741180461128" duration="1883000" />
+      <workItem from="1741337679904" duration="648000" />
+      <workItem from="1741606941502" duration="18000" />
+      <workItem from="1741845205449" duration="26000" />
+      <workItem from="1741945547575" duration="1395000" />
+      <workItem from="1742442297945" duration="2316000" />
+      <workItem from="1742544903634" duration="2348000" />
+      <workItem from="1742627640277" duration="108000" />
+      <workItem from="1742906966227" duration="906000" />
+      <workItem from="1742909314115" duration="62000" />
+      <workItem from="1742909413983" duration="322000" />
+      <workItem from="1744073114083" duration="1656000" />
+      <workItem from="1744109243438" duration="714000" />
+      <workItem from="1744374582861" duration="608000" />
+      <workItem from="1744523848022" duration="1928000" />
+      <workItem from="1744529450937" duration="1210000" />
+      <workItem from="1744555871197" duration="327000" />
+      <workItem from="1744614428145" duration="1219000" />
+      <workItem from="1747714212698" duration="851000" />
+      <workItem from="1747730899340" duration="15000" />
+      <workItem from="1747730962573" duration="769000" />
+      <workItem from="1747742337951" duration="4759000" />
     </task>
     <task id="LOCAL-00001" summary="添加用户模打包插件">
       <option name="closed" value="true" />
@@ -485,7 +541,12 @@
     <MESSAGE value="优化注册接口" />
     <MESSAGE value="学习模块的增删改查接口" />
     <MESSAGE value="bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug" />
+    <MESSAGE value="热点帖子排行" />
+    <option name="LAST_COMMIT_MESSAGE" value="热点帖子排行" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
