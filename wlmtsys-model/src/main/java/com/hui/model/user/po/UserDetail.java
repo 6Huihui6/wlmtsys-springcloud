@@ -38,7 +38,7 @@ public class UserDetail implements Serializable {
     @ApiModelProperty(value = "用户类型：1-员工, 2-普通学员，3-老师")
     private UserType type;
 
-
+    private String username;
 
     @ApiModelProperty(value = "性别：0-男性，1-女性")
     private Integer gender;

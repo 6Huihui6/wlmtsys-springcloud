@@ -26,6 +26,7 @@ import com.hui.post.service.IImagesService;
 import com.hui.post.service.IPostService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -46,6 +47,7 @@ import java.util.stream.Collectors;
  * @since 2024-11-19
  */
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IPostService {
 
@@ -293,7 +295,9 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements IP
         PostVo postVo = BeanUtils.copyBean(post, PostVo.class);
         // 2.查询用户详情
         UserVo userVo = userClient.queryUserById(post.getUserId());
+        log.info("userVo:{}", userVo);
         UserDetailVO userDetailVO = BeanUtils.copyProperties(userVo, UserDetailVO.class);
+        log.info("userDetailVO:{}", userDetailVO);
         postVo.setUserDetailVO(userDetailVO);
         // 3.查询当前用户是否点赞
         boolean isLiked = Boolean.TRUE.equals(redisTemplate.opsForSet().isMember(BehaviorConstants.LIKE_BEHAVIOR + postId, UserContext.getUser().toString()));
